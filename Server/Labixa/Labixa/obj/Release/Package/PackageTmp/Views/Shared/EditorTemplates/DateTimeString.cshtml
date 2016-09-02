@@ -1,0 +1,31 @@
+﻿@model String
+@if (Model == null || Model == "Default")
+{
+    @Html.TextBox("", String.Format("{0:MM/dd/yyyy}", DateTime.Now), new { @class = "form-control date-picker" })
+}
+else
+{
+    @Html.TextBox("", String.Format("{0:MM/dd/yyyy}", DateTime.Parse(Model)), new { @class = "form-control date-picker" })
+}
+@{
+    string name = ViewData.TemplateInfo.HtmlFieldPrefix;
+    string id = name.Replace(".", "_");
+}
+<script type="text/javascript">
+    $(".date-picker").datepicker({
+        format: "mm/dd/yyyy",
+        onSelect: function () {
+            var listDate = $(".hasDatepicker");
+            var date1 = new Date($(listDate[0]).val());
+            var date2 = new Date($(listDate[1]).val());
+            if (date2 < date1) {
+                $("#night").val("NaN");
+            }
+            else {
+                var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+                var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+                $("#night").val(diffDays);
+            }
+        }
+    });
+</script>

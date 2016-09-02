@@ -1,0 +1,269 @@
+.main-menu li {
+    padding: 0px;
+    margin-top: 20px;
+}
+
+.main-menu ul.dropdown-menu {
+    height: auto;
+}
+
+.dropdown-menu > li {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.dropdown-menu > li > a {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.dropdown-menu > li > a:hover {
+    border: none;
+    color: #1090bf;
+}
+
+.navbar-collapse.collapse.in {
+    max-height: none;
+    background-color: white;
+}
+
+#main-header {
+	background-color: white;
+	height: 100px;
+	margin-top: 38px;
+	border-bottom: 1px solid rgb(225, 225, 225);
+    border-top: 1px solid rgb(225, 225, 225);
+}
+
+.navbar-toggle {
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.navbar-toggle > .icon-bar {
+    background-color: black;
+}
+
+ul#navigation > li > a {
+	padding-bottom: 10px;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 15px;
+}
+
+ul#navigation > .link-active > a {
+	color: rgb(26, 148, 195);
+	border-bottom: 3px solid rgb(26, 148, 195);
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 15px;
+}
+
+#slider {
+	width: 100%;
+}
+
+.cart-info {
+	text-align: right;
+}
+
+.cart-login {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.logo {
+	padding-top: 0px;	
+	padding-bottom: 0px;
+	margin-top: 7px;
+}
+
+.banner-bottom {
+    padding: 0px;
+	background-image: url(../../Images/oceanlink/banner-bottom.png);
+	margin-top: 30px;
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+}
+
+.banner-content {
+	padding-top: 50px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+    padding-bottom: 50px;
+}
+
+.banner-btn {
+	margin-top: 50px;
+	width: 100%;
+	height: 70px;
+	background-color: #efc812;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+    padding-top: 22px;
+}
+
+.background-map {
+    z-index: -100;
+    position: absolute;
+    right: 0px;
+    height: 400px;
+    width: 65%;
+	background-image: url(../../Images/oceanlink/map.png);
+    -webkit-background-size: 90% 60%; /* For WebKit*/
+    -moz-background-size: 90% 60%;    /* Mozilla*/
+    -o-background-size: 90% 60%;      /* Opera*/
+    background-size: 90% 60%;         /* Generic*/
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.nav-tabs {
+	font-weight: bold;
+	font-size: 18px;
+	border-bottom: 2px solid #dddddd;
+}
+
+.nav-tabs > li > a {
+	color: #474747;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	color: rgb(26, 148, 195);
+	border-top: 2px solid #dddddd;
+	border-left: 2px solid #dddddd;
+	border-right: 2px solid #dddddd;
+	border-bottom: none;
+    position: relative;
+    top: 1px;
+}
+
+footer {
+	background-image: url(../../Images/oceanlink/footer.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+	border: none;
+	margin-top: 10px;
+	color: white;
+    background-color: white;
+}
+
+.client {
+    padding: 0px;
+	margin-top: 10px;
+	background-color: white;
+}
+
+.client img {
+	width: 100%;
+}
+
+.input-group {
+	height: 20px;
+	width: 300px;
+}
+
+.newsletter-form {
+	margin-top: 90px;
+	color: white;
+	font-size: 18px;
+}
+
+.social {
+    float: right;
+}
+
+.newsletter-form > div {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.newsletter-input {
+	margin: 0px;
+}
+
+.newsletter-input:focus {
+	box-shadow: none;
+	border: none;
+}
+
+.newsletter-btn {
+	background-color: rgb(249, 210, 27);
+	color: black;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.share {
+	width: 45%;
+}
+
+.social {
+	width: 55%;
+}
+
+
+.main-footer {
+	margin-top: 50px;
+}
+
+.main-footer > div  {
+	padding: 0px;
+}
+
+.main-footer > div > hr {
+	display: block;
+    border-top: 3px solid white;
+    margin-right: 75%;
+}
+
+.bottom-footer {
+	text-align: center;
+}
+
+.title-footer {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.company-footer {
+	font-size: 18px;
+}
+
+.line > hr {
+	border-top: 3px solid rgb(131, 131, 131);
+	padding: 0px;
+	margin-top: 30px;
+}
+
+.category-footer {
+	padding-left: 0px;
+}
+
+.line-dot-bottom {
+    color: #f2cb15;
+    margin-top: 50px;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+#newsletter {
+    font-size: 13px;
+}

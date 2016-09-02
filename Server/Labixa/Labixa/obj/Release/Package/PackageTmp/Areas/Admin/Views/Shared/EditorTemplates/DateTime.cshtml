@@ -1,0 +1,22 @@
+﻿@model DateTime?
+@if (Model.HasValue && Model != null)
+{
+    <div class="input-group date col-md-8" style="padding: 0px">
+        @Html.TextBox("", String.Format("{0:MM/dd/yyyy}", Model.Value), new { @class = "form-control date-picker" })
+    </div>
+}
+else
+{
+    <div class="input-group  date col-md-8" style="padding: 0px">
+        @Html.TextBox("", String.Format("{0:MM/dd/yyyy}", "01/01/2016"), new { @class = "form-control date-picker" })
+    </div>
+}
+@{
+    string name = ViewData.TemplateInfo.HtmlFieldPrefix;
+    string id = name.Replace(".", "_");
+}
+<script type="text/javascript">
+    $(".date-picker").datepicker({
+        format: "mm/dd/yyyy"
+    });
+</script>

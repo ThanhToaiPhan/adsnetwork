@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@Page.Title - My ASP.NET Web Page</title>
+        <link href="~/Content/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" />
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/jquery-ui-1.10.3.js"></script>
+        <script src="~/Scripts/modernizr-2.6.2.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width" />
+    </head>
+    <body>
+        @* Banner_Top_Left *@
+        <div id="95220c9a-daad-4439-a482-c4ea2a6be475"></div>
+        @* Banner_Top_Right *@
+        <div id="b73c93f3-1bfe-4532-baee-fd689d6ac395"></div>
+
+        @* Video_Top_Right *@
+        <div id="1257d6da-f300-4b18-aa76-fedcaa9655b1"></div>
+        @* Video_Top_Left *@
+        <div id="4c02c727-4f37-442e-96b0-437ee8d91941"></div>
+        @* Video_Middle_Right *@
+        <div id="8c199bec-8c9f-40a8-8fee-73dd6856f552"></div>
+        @* Video_Middle_Left *@
+        <div id="3f477e23-e68c-4303-aae1-ad49fafa4bc9"></div>
+
+        @* Gif_Top_Left *@
+        <div id="9e3113c2-1ede-454c-9aa9-74ecdf6a052c"></div>
+        @* Gif_Top_Right *@
+        <div id="a0e52b28-01e6-4fda-8c98-24a5692331f7"></div>
+        @* Gif_Top_Center *@
+        <div id="6ddb131e-7839-4993-999a-d66756be1f97"></div>
+        <header>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p class="site-title"><a href="~/">your logo here</a></p>
+                </div>
+                <div class="float-right">
+                    <section id="login">
+                        @if (WebSecurity.IsAuthenticated) {
+                            <text>
+                                Hello, <a class="email" href="~/Account/Manage" title="Manage">@WebSecurity.CurrentUserName</a>!
+                                <form id="logoutForm" action="~/Account/Logout" method="post">
+                                    @AntiForgery.GetHtml()
+                                    <a href="javascript:document.getElementById('logoutForm').submit()">Log out</a>
+                                </form>
+                            </text>
+                        } else {
+                            <ul>
+                                <li><a href="~/Account/Register">Register</a></li>
+                                <li><a href="~/Account/Login">Log in</a></li>
+                            </ul>
+                        }
+                    </section>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="~/">Home</a></li>
+                            <li><a href="~/About">About</a></li>
+                            <li><a href="~/Contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div id="body">
+            @RenderSection("featured", required: false)
+            <section class="content-wrapper main-content clear-fix">
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+                    @RenderBody()
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                    <h3>We suggest the following:</h3>
+                    <div class="round">
+                        <div class="one">
+                            <h5>Getting Started</h5>
+                            <div class="flip-container vertical">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <span style="color: red;">Thanks For Your Voting!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <script>
+                                $("input").click(function () {
+                                    console.log($(this));
+                                    $(".flipper").css("transform", "rotateX(180deg)");
+                                    alert($(this).val());
+                                });
+                            </script>
+                            <br/>
+                            ASP.NET Web Pages and the new Razor syntax provide a fast, approachable, and lightweight way to combine server code with HTML
+                            to create dynamic web content. Connect to databases, add video, link to social networking sites, and include many more features
+                            that let you create beautiful sites using the latest web standards.
+                            <a href="http://go.microsoft.com/fwlink/?LinkId=245139">Learn more…</a>
+                        </div>
+                    </div>
+                    @* Banner_Column_Right *@
+                    <div id="f10b7a5e-53e9-4475-8b9b-edb68fd5ba50"></div>
+
+                    @* Video_Column_Right *@
+                    <div id="a29cb250-1571-4c1b-b295-1ca44c85ee97"></div>
+
+                    @* Gif_Column_Right_Square *@
+                    <div id="e935902e-10e3-4802-96f9-fd5635a8786d"></div>
+                    <h3>We suggest the following:</h3>
+                    <div class="round">
+                        <div class="one">
+                            <h5>Getting Started</h5>
+                            ASP.NET Web Pages and the new Razor syntax provide a fast, approachable, and lightweight way to combine server code with HTML
+                            to create dynamic web content. Connect to databases, add video, link to social networking sites, and include many more features
+                            that let you create beautiful sites using the latest web standards.
+                            <a href="http://go.microsoft.com/fwlink/?LinkId=245139">Learn more…</a>
+                        </div>
+                    </div>
+                    @* Banner_Column_Right_Big *@
+                    <div id="c4d120a5-2bf6-4bfc-b6cf-ce013effd284"></div>
+
+                    @* Gif_Column_Right *@
+                    <div id="bbae1ca3-bf16-419d-8824-2afd485bc362"></div>
+                </div>
+            </section>
+            @* Banner_Bottom_Left *@
+            <div id="226e0835-97ba-4108-9855-f72cf82d531d"></div>
+            @* Banner_Bottom_Right *@
+            <div id="8f53ca07-3f85-47ac-aa15-9a3ddad7bb45"></div>
+            @* Banner_Bottom_Center *@
+            <div id="518c775a-2b16-4cad-933c-cbdcc4de7eaa"></div>
+            
+            @* Video_Bottom_Right *@
+            <div id="06e2320c-e931-4bcc-ae6e-f176892001ab"></div>
+            @* Video_Bottom_Left *@
+            <div id="f7d5495c-db0d-4fcb-a6d0-c8054840a869"></div>
+
+            @* Gif_Bottom_Center *@
+            <div id="afa1e625-ae2b-4899-a9c5-569d2635af89"></div>
+            @* Gif_Bottom_Left *@
+            <div id="4a3afcd5-1def-4ced-82b4-a85d61a1c699"></div>
+            @* Gif_Bottom_Right *@
+            <div id="e71b5e6d-fbe3-470d-97c0-378dfd3a671c"></div>
+            @*<script>
+                var sub_string = window.location.search.substring(1);
+                document.write("<script src='//172.16.10.115:9006/scripts/server/" + sub_string + ".js'><\/script>");
+            </script>*@
+            @*<script>
+                var link_1 = "http://indolink.vn/";
+                var image_1 = "http://172.16.10.115:9006/images/uploaded/gif/300x25021.gif";
+                var code = "xxx";
+            </script>
+            <script>$('#' + code).html("<div id='gif_bottom_left_show' style='z-index: 99999; font-family: Roboto, sans-serif; display: block; width: 300px; height: 250px; position: fixed; bottom: 0px; left: 0px; border: 1px solid #b2b2b2; background-color: white;'><div style='padding: 5px 5px 5px 5px; border-bottom: 1px solid #b2b2b2; font-size: 0px; height: 22px;'><a href='javascript:void(0)' id='gif_bottom_left_down' style='float: left; margin-right: 7px; width: 10px; height: 10px; padding: 0px; padding-left: 5px; padding-right: 5px; border-radius: 2px; text-decoration: none; background: url(http://172.16.10.115:9006/images/oceanlink/ad-down.png) no-repeat;'></a><marquee style='float: left; width: 230px; font-size: 9px; font-style: italic; font-weight: bold;'><a href='http://indolink.vn' target='_blank' style='text-decoration: none;'>Sản phẩm độc quyền của <span style='color: blue;'>Indolink</span></a></marquee></div><a href='" + link_1 + "' target='_blank' style='padding: 0px; margin: 0px;'><img id='gif_bottom_left' width='100%' height='230px' src='" + image_1 + "'/></a></div><div id='gif_bottom_left_hide' style='z-index: 99999; font-family: Roboto, sans-serif; display: none; width: 300px; height: 22px; position: fixed; bottom: 0px; left: 0px; border: 1px solid #b2b2b2; background-color: white;'><div style='padding: 5px 5px 5px 5px; font-size: 8px; height: 22px;'><a href='javascript:void(0)' id='gif_bottom_left_up' style='float: left; width: 10px; height: 10px; padding: 0px; padding-left: 5px; padding-right: 5px; border-radius: 2px; text-decoration: none; background: url(http://172.16.10.115:9006/images/oceanlink/ad-up.png) no-repeat;'></a><a href='javascript:void(0)' id='gif_bottom_left_close' style='float: left; width: 10px; height: 10px; padding: 0px; padding-left: 5px; padding-right: 5px; margin-left: 5px; margin-right: 7px; border-radius: 2px; text-decoration: none; background: url(http://172.16.10.115:9006/images/oceanlink/ad-close.png) no-repeat;'></a><marquee style='float: left; width: 550px; font-size: 9px; font-style: italic; font-weight: bold; text-align: right;'><a href='http://indolink.vn' target='_blank' style='text-decoration: none;'>Sản phẩm độc quyền của <span style='color: blue;'>Indolink</span></a></marquee></div></div>");</script>
+            <script>$("#gif_bottom_left_down").click(function () { $("#gif_bottom_left_show").hide(), $("#gif_bottom_left_hide").show(), $("#gif_bottom_left").get(0).pause() }), $("#gif_bottom_left_up").click(function () { $("#gif_bottom_left_show").show(), $("#gif_bottom_left_hide").hide(), $("#gif_bottom_left").get(0).play() }), $("#gif_bottom_left_close").click(function () { $("#gif_bottom_left_show").hide(), $("#gif_bottom_left_hide").hide(), $("#gif_bottom_left").get(0).pause() });</script>*@
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET Web Page</p>
+                </div>
+            </div>
+        </footer>
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>

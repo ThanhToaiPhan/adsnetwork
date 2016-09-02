@@ -1,0 +1,62 @@
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Core.dll.config
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Core.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Core.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\EntityFramework.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\EntityFramework.SqlServer.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Data.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.Helpers.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.Mvc.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.Razor.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.Razor.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\PagedList.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Data.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\EntityFramework.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\EntityFramework.SqlServer.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.Helpers.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.Mvc.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.Razor.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.Razor.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\bin\Release\PagedList.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\obj\Release\Outsourcing.Core.csprojResolveAssemblyReference.cache
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\obj\Release\Outsourcing.Core.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Core\obj\Release\Outsourcing.Core.pdb
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Core.dll.config
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Core.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Core.pdb
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\EntityFramework.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\EntityFramework.SqlServer.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Data.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.Helpers.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.Mvc.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.Razor.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.Razor.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\PagedList.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Outsourcing.Data.pdb
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\EntityFramework.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\EntityFramework.SqlServer.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.Helpers.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.Mvc.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.Razor.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\System.Web.WebPages.Razor.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\bin\Release\PagedList.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\obj\Release\Outsourcing.Core.csprojResolveAssemblyReference.cache
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\obj\Release\Outsourcing.Core.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Core\obj\Release\Outsourcing.Core.pdb

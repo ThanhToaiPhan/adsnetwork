@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutOceanlinkTour.cshtml";
+}
+@model Labixa.ViewModels.DichVuVisaModel
+<link rel="stylesheet" href="~/Content/oceanlink/dichvuvisa.css" />
+<script type="text/javascript" src="~/Scripts/dichvuvisa.js"></script>
+<div class="wrapper wrapper-tour">
+    <div class="row">
+        <div class="container tour">
+            <div class="col-sm-12 tour-top effect2">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 page-number page-1">
+                        <span>1</span>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 page-text">
+                        <div class="row row-visa-1"><span>XỬ LÝ NHANH</span></div>
+                        <span class="row row-2">Hồ sơ được tiếp nhận và hoàn thành trong thời gian nhanh nhất</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 page-number page-2">
+                        <span>2</span>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 page-text">
+                        <div class="row row-visa-1"><span>CHIA SẺ THÔNG TIN</span></div>
+                        <span class="row row-2">Mọi thông tin cần thiết để có thị thực sẽ được chia sẻ chính xác cho bạn</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 page-number page-3">
+                        <span>3</span>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 page-text">
+                        <div class="row row-visa-1"><span>NÂNG CAO TỶ LỆ VISA</span></div>
+                        <span class="row row-2">Mọi thông tin cần thiết để có thị thực sẽ được chia sẻ chính xác cho bạn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container list-blog">
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <ul class="nav nav-pills nav-stacked">
+            @for (int i = 0; i < Model.listBlog.Count; i++)
+            {
+                if (Model.listBlog[i].Id == Model.currentBlog.Id)
+                {
+                    <li class="active"><a href="/dich-vu-visa/@Model.listBlog[i].Slug">@Model.listBlog[i].Title</a></li>
+                }
+                else
+                {
+                    <li><a href="/dich-vu-visa/@Model.listBlog[i].Slug">@Model.listBlog[i].Title</a></li>
+                }
+            }
+        </ul>
+    </div>
+    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 blog-current">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 blog-title">
+            @Model.currentBlog.Title
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 hr1">
+            <hr />
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 hr2">
+            <hr />
+        </div>
+        @Html.Raw(@Model.currentBlog.Content)
+    </div>
+</div>

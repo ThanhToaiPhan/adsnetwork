@@ -1,0 +1,25 @@
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\bin\Debug\Resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\bin\Debug\Resources.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\bin\Debug\en\Resources.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\bin\Debug\vi\Resources.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Debug\Resources.Resources.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Debug\Resources.Resources.en.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Debug\Resources.Resources.vi.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Debug\en\Resources.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Debug\vi\Resources.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Debug\Resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Debug\Resources.pdb
+D:\Works\Ads Network\Server\Labixa\Resources\bin\Debug\Resources.dll
+D:\Works\Ads Network\Server\Labixa\Resources\bin\Debug\Resources.pdb
+D:\Works\Ads Network\Server\Labixa\Resources\bin\Debug\en\Resources.resources.dll
+D:\Works\Ads Network\Server\Labixa\Resources\bin\Debug\vi\Resources.resources.dll
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\Resources.csprojResolveAssemblyReference.cache
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\Resources.Resources.resources
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\Resources.Resources.en.resources
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\Resources.Resources.vi.resources
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\Resources.csproj.GenerateResource.Cache
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\en\Resources.resources.dll
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\vi\Resources.resources.dll
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\Resources.dll
+D:\Works\Ads Network\Server\Labixa\Resources\obj\Debug\Resources.pdb

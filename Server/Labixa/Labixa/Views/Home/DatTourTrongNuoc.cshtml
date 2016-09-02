@@ -1,0 +1,192 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutOceanlinkTour.cshtml";
+}
+@model Labixa.ViewModels.DatTourTrongNuocModel
+@{ 
+    var url = "";
+}
+@functions{
+    public String GetLocationStart(String location)
+    {
+        int index = location.IndexOf("-");
+        if (index > 0)
+        {
+            return location.Substring(0, index);
+        }
+        else
+        {
+            index = location.IndexOf("–");
+            if (index > 0)
+            {
+                return location.Substring(0, index);
+            }
+        }
+        return "Không đề cập";
+
+    }
+}
+<link rel="stylesheet" href="~/Content/oceanlink/dattourtrongnuoc.css" />
+<script type="text/javascript" src="~/Scripts/dattourtrongnuoc.js"></script>
+<div class="container">
+    <div class="row tour-order-info">
+        <div class="tour-order-head">
+            <div class="tour-order-circle">
+                <img src="~/Images/oceanlink/order-1.png" />
+            </div>
+            <span class="tour-info-text">THÔNG TIN TOUR</span>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 block block-1">
+            <div class="block-name">
+                <span>@Model.productSchedule.Product.Name</span>
+            </div>
+            <div class="block-location">
+                <span class="block-1"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> @Model.productSchedule.Product.Description</span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 block block-2">
+            <div class="text-order">
+                <div class="text-order-head">
+                    <span>Khởi hành từ:</span>
+                </div>
+                <span>@GetLocationStart(Model.productSchedule.Product.Description)</span>
+            </div>
+            <div class="text-order">
+                <div class="text-order-head">
+                    <span class="text-order-front">Thời gian khởi hành:</span>
+                </div>
+                <span>@Model.productSchedule.ProductScheduleAttributeMappings.Where(psam => psam.ProductScheduleAttribute.Name == "Ngày đi").FirstOrDefault().Value</span>
+            </div>
+            <div class="text-order">
+                <div class="text-order-head">
+                    <span class="text-order-front">Thời gian về:</span>
+                </div>
+                <span>@Model.productSchedule.ProductScheduleAttributeMappings.Where(psam => psam.ProductScheduleAttribute.Name == "Ngày về").FirstOrDefault().Value</span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 block block-3">
+            <div class="text-order">
+                <div class="text-order-head">
+                    <span class="text-order-front">Phương tiện:</span>
+                </div>
+                <span>@Model.productSchedule.Product.ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Phương tiện").FirstOrDefault().Value</span>
+            </div>
+            <div class="text-order">
+                <div class="text-order-head">
+                    <span class="text-order-front">Khách sạn:</span>
+                </div>
+                <span>@Model.productSchedule.Product.ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Khách sạn").FirstOrDefault().Value</span>
+            </div>
+            <div class="text-order text-order-price">
+                <div class="text-order-head">
+                    <span>Giá Tour:</span>
+                </div>
+                <span>@Model.productSchedule.Price.ToString("N0") VND</span>
+            </div>
+        </div>
+    </div>
+    @if (ViewBag.tour == "TRONG NƯỚC")
+    {
+        url = "XemLaiThongTinDatTourTrongNuoc";
+    }
+    else
+    {
+        url = "XemLaiThongTinDatTourNuocNgoai";
+    }
+    @using (Html.BeginForm(url, "Home", FormMethod.Post))
+    {
+        @Html.HiddenFor(model => model.productSchedule.Id);
+    <div class="row tour-order-customer effect2">
+        <div class="tour-order-head">
+            <div class="tour-order-circle">
+                <img src="~/Images/oceanlink/order-2.png" />
+            </div>
+            <span class="tour-order-text">ĐẶT TOUR</span>
+            <span class="sub-head" style="font-size: 13px;">Vui lòng điền đầy đủ thông tin bắt buộc (*)</span>
+        </div>
+        <hr/>
+        <div class="row information">
+            <div class="customer-head">
+                <span><img src="~/Images/oceanlink/pin.png" /> Thông tin khách hàng</span>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="margin-bottom: 10px;">
+                <div class="row order-input">
+                    <input type="text" name="customerName" id="customerName" />
+                    <span>Họ và tên (*):</span>
+                </div>
+                <div class="row order-input">
+                    <input type="text" name="customerAddress" id="customerAddress" />
+                    <span>Địa chỉ (*):</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="margin-bottom: 10px;">
+                <div class="row order-input">
+                    <input type="text" name="customerPhone" id="customerPhone" />
+                    <span>Điện thoại (*):</span>
+
+                </div>
+                <div class="row order-input">
+                    <input type="text" name="customerEmail" id="customerEmail"/>
+                    <span>Email (*):</span>
+                </div>
+            </div>    
+        </div>
+        <hr/>
+        <div class="row content order-pointer">
+            <div class="customer-head">
+                <span><img src="~/Images/oceanlink/pin.png" /> Nội dung đăng kí</span>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="row order-number-input">
+                    <div class="row">
+                        <span>Em bé:</span>
+                        <input type="text" name="quantityBaby" id="quantityBaby" placeholder="0" />
+                    </div>
+                    <div class="row">
+                        <span>Trẻ em:</span>
+                        <input type="text" name="quantityChild" id="quantityChildren" placeholder="0" />
+                    </div>
+                    <div class="row">
+                        <span>Người lớn:</span>
+                        <input type="text" name="quantityAdult" id="quantityAdult" placeholder="0" />
+                    </div>
+                    <span>Số lượng (*):</span>
+                </div>
+                <div class="row order-des-input">
+                    <textarea name="note" id="note"></textarea>
+                    <span>Ghi chú:</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="row order-condition-input">
+                    <div class="payment">
+                        <input type="radio" checked="checked" name="" value="" />
+                        <img src="~/Images/oceanlink/money-pay.png" />
+                        <span>THANH TOÁN TẠI QUẦY</span>
+                    </div>
+                    <span>Hình thức thanh toán:</span>
+                </div>
+                <div class="row order-condition-input">
+                    <div class="condition">
+                        <input type="checkbox" id="condition" />
+                        <span>Tôi đã đọc và đồng ý tất cả các điều khoản trên</span>
+                    </div>
+                    <span>Điều khoản:</span>
+                </div>
+                <div class="row order-code-input">
+                    <div class="code">
+                        <input type="text" id="captcha"/>
+                        <a id="captcha-change" href="#" class="pull-right"><img src="~/Images/oceanlink/recaptcha.png" /></a>
+                        <div class="pull-right">
+                            <span id="captcha-content"></span>
+                        </div>
+                    </div>
+                    <span>Nhập mã xác nhận:</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container order-button">
+        <a href="" id="order-button" class="button button-3d button-rounded">ĐẶT TOUR <img style="margin-left: 10px;" src="~/Images/oceanlink/order-send.png" /></a>
+    </div>
+    }
+</div>

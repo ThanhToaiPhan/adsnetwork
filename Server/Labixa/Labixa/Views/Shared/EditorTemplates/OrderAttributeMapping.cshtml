@@ -1,0 +1,35 @@
+﻿@model Outsourcing.Data.Models.OrderAttributeMapping
+@{
+    var template = "";
+    if (Model.OrderAttribute.ControlType.ToLower().Equals("textarea"))
+    {
+        template = "Ckeditor";
+    }
+    else if (Model.OrderAttribute.ControlType.ToLower().Equals("text"))
+    {
+        template = "Text";
+    }
+    else if (Model.OrderAttribute.ControlType.ToLower().Equals("datetimestring"))
+    {
+        template = "DateTimeString";
+    }
+    else if (Model.OrderAttribute.ControlType.ToLower().Equals("int32string"))
+    {
+        template = "Int32String";
+    }
+    else if (Model.OrderAttribute.ControlType.ToLower().Equals("checkbox"))
+    {
+        template = "CheckBox";
+    }
+}
+<div class="form-group ">
+    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.IsRequired)
+    @Html.HiddenFor(model => model.DisplayOrder)
+
+    <label class="col-sm-3 control-label no-padding-right" for="">@Model.OrderAttribute.Name</label>
+    <div class="col-sm-9">
+        @Html.EditorFor(model => model.Value, template)
+        @Html.ValidationMessageFor(model => model.Value)
+    </div>
+</div>

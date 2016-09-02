@@ -1,0 +1,12 @@
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\bin\Release\Resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\bin\Release\Resources.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\bin\Release\en\Resources.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\bin\Release\vi\Resources.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Release\Resources.Resources.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Release\Resources.Resources.en.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Release\Resources.Resources.vi.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Release\Resources.csproj.GenerateResource.Cache
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Release\en\Resources.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Release\vi\Resources.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Release\Resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Resources\obj\Release\Resources.pdb

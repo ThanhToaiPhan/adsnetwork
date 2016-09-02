@@ -1,0 +1,156 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutOceanlinkTour.cshtml";
+}
+@model Labixa.ViewModels.DatPhongModel
+<link rel="stylesheet" href="~/Content/oceanlink/xemlaithongtindatphong.css" />
+<script type="text/javascript" src="~/Scripts/xemlaithongtindatphong.js"></script>
+<div class="container">
+    <div class="row tour-order-info">
+        <div class="tour-order-head">
+            <span class="tour-info-text">XÁC NHẬN THÔNG TIN ĐẶT PHÒNG</span>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 block block-1">
+            <div class="room-image" style="background: url(@Model.productSchedule.ProductSchedulePictureMappings.FirstOrDefault().Picture.Url); background-size: 100% 100%;"></div>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 block block-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-hotel room-hotel-1">
+                @Model.productSchedule.Product.Name
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-hotel">
+                @Model.productSchedule.ProductScheduleAttributeMappings.FirstOrDefault().Value
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 block block-3">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-location">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> @Model.productSchedule.Product.Description
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-order">
+                <div class="text-order-head">
+                    <span class="text-order-front">Số người:</span>
+                </div>
+                <span style="float: right;">@Model.productSchedule.ProductScheduleAttributeMappings.ToList().Skip(1).Take(1).FirstOrDefault().Value</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-order">
+                <div class="text-order-head">
+                    <span class="text-order-front">Thêm 1 người:</span>
+                </div>
+                <span style="float: right;">@Int32.Parse(Model.productSchedule.ProductScheduleAttributeMappings.ToList()[2].Value).ToString("N0") VND</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-order">
+                <div class="text-order-head">
+                    <span class="text-order-front">Phí khác:</span>
+                </div>
+                <span style="float: right;">@Int32.Parse(Model.productSchedule.ProductScheduleAttributeMappings.ToList()[3].Value).ToString("N0") VND</span>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-order text-order-price">
+                <div class="text-order-head">
+                    <span>Giá:</span>
+                </div>
+                <span style="float: right;">@Model.productSchedule.Price.ToString("N0") VND</span>
+            </div>
+        </div>
+    </div>
+    <hr />
+    @using (Html.BeginForm("XacNhanDatPhong", "Home", FormMethod.Post))
+    {
+        @Html.HiddenFor(model => model.productSchedule.Id);
+        @Html.HiddenFor(model => model.customerAddress);
+        @Html.HiddenFor(model => model.customerEmail);
+        @Html.HiddenFor(model => model.customerName);
+        @Html.HiddenFor(model => model.customerPhone);
+        @Html.HiddenFor(model => model.checkIn);
+        @Html.HiddenFor(model => model.checkOut);
+        @Html.HiddenFor(model => model.numberPerson);
+        @Html.HiddenFor(model => model.numberRoom);
+        @Html.HiddenFor(model => model.numberNight);
+        @Html.HiddenFor(model => model.note);
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 tour-order-customer effect2">
+            <div class="row information col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="customer-head">
+                    <span><img src="~/Images/oceanlink/pin.png" /> Thông tin khách hàng</span>
+                    <a class="btn back-button pull-right" onclick="goBack()"></a>
+                </div>
+                <div class="row order-input">
+                    <div>
+                        <span>Họ và tên:</span>
+                    </div>
+                    <span>@Model.customerName</span>
+                </div>
+                <div class="row order-input">
+                    <div>
+                        <span>Địa chỉ:</span>
+                    </div>
+                    <span>@Model.customerAddress</span>
+                </div>
+                <div class="row order-input">
+                    <div>
+                        <span>Điện thoại:</span>
+                    </div>
+                    <span>@Model.customerPhone</span>
+                </div>
+                <div class="row order-input">
+                    <div>
+                        <span>Email:</span>
+                    </div>
+                    <span>@Model.customerEmail</span>
+                </div>
+            </div>
+            <div class="row content col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="customer-head">
+                    <span><img src="~/Images/oceanlink/pin.png" /> Nội dung đăng kí</span>
+                    <a class="btn back-button pull-right" onclick="goBack()"></a>
+                </div>
+                <div class="row order-input">
+                    <div class="number">
+                        <span>Số lượng:</span>
+                    </div>
+                    <span>@Model.numberPerson</span>
+                </div>
+                <div class="row order-input">
+                    <div class="number">
+                        <span>Số phòng:</span>
+                    </div>
+                    <span>@Model.numberRoom</span>
+                </div>
+                <div class="row order-input">
+                    <div class="number">
+                        <span>Nhận phòng:</span>
+                    </div>
+                    <span>@Model.checkIn</span>
+                </div>
+                <div class="row order-input">
+                    <div class="number">
+                        <span>Trả phòng:</span>
+                    </div>
+                    <span>@Model.checkOut</span>
+                </div>
+                <div class="row order-input">
+                    <div class="number">
+                        <span>Số đêm:</span>
+                    </div>
+                    <span>@Model.numberNight</span>
+                </div>
+                <div class="row order-input">
+                    <div class="number">
+                        <span>Hình thức thanh toán:</span>
+                    </div>
+                    <div class="payment" style="width: 400px;">
+                        <img src="~/Images/oceanlink/money-pay.png" />
+                        <span>THANH TOÁN TẠI QUẦY</span>
+                    </div>
+                </div>
+                <div class="row order-input">
+                    <div class="number">
+                        <span>Ghi chú:</span>
+                    </div>
+                    <span>@Model.note</span>
+                </div>
+            </div>
+            <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 order-pointer"></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 order-button">
+            <a href="" id="order-button" class="button button-3d button-rounded">XÁC NHẬN THÔNG TIN <img style="margin-left: 10px;" src="~/Images/oceanlink/order-ok.png" /></a>
+        </div>
+    }
+</div>
+

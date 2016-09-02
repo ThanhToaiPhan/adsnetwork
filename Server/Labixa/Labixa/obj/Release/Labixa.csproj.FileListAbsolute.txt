@@ -1,0 +1,168 @@
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\Labixa.csprojResolveAssemblyReference.cache
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\Labixa.App_Data.Resources.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\Labixa.App_Data.Resources.en.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\Labixa.App_Data.Resources.vi.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\Labixa.csproj.GenerateResource.Cache
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Labixa.dll.config
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Labixa.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Labixa.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\en\Labixa.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\vi\Labixa.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Antlr3.Runtime.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Autofac.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Autofac.Integration.Mvc.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\AutoMapper.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\ELFinder.Connector.ASPNet.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\ELFinder.Connector.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\EntityFramework.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\EntityFramework.SqlServer.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\ImageProcessor.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.Owin.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Host.SystemWeb.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Cookies.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Facebook.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Google.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.OAuth.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Twitter.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\MoreLinq.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Newtonsoft.Json.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Outsourcing.Core.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Outsourcing.Data.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Outsourcing.Service.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Owin.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\PagedList.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\PagedList.Mvc.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.Helpers.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.Mvc.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.Optimization.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.Razor.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.WebPages.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.WebPages.Razor.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\WebGrease.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Outsourcing.Core.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Outsourcing.Data.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Outsourcing.Service.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Antlr3.Runtime.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Autofac.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Autofac.Integration.Mvc.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\AutoMapper.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\EntityFramework.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\EntityFramework.SqlServer.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.Owin.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Host.SystemWeb.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Cookies.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Facebook.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Google.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.OAuth.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Twitter.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\MoreLinq.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\Newtonsoft.Json.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\PagedList.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\PagedList.Mvc.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.Helpers.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.Mvc.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.Optimization.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.Razor.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.WebPages.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Release\System.Web.WebPages.Razor.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\en\Labixa.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\vi\Labixa.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\Labixa.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Release\Labixa.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Labixa.dll.config
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Labixa.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Labixa.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\en\Labixa.resources.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\vi\Labixa.resources.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Antlr3.Runtime.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Autofac.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Autofac.Integration.Mvc.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\AutoMapper.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\ELFinder.Connector.ASPNet.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\ELFinder.Connector.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\EntityFramework.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\EntityFramework.SqlServer.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\ImageProcessor.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.Owin.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Host.SystemWeb.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Cookies.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Facebook.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Google.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.OAuth.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Twitter.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\MoreLinq.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Newtonsoft.Json.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Outsourcing.Core.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Outsourcing.Data.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Outsourcing.Service.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Owin.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\PagedList.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\PagedList.Mvc.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.Helpers.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.Mvc.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.Optimization.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.Razor.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.WebPages.Deployment.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.WebPages.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.WebPages.Razor.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\WebGrease.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Outsourcing.Core.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Outsourcing.Data.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Outsourcing.Service.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Antlr3.Runtime.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Autofac.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Autofac.Integration.Mvc.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\AutoMapper.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\EntityFramework.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\EntityFramework.SqlServer.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.AspNet.Identity.Owin.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Host.SystemWeb.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Cookies.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Facebook.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Google.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.OAuth.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Microsoft.Owin.Security.Twitter.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\MoreLinq.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\Newtonsoft.Json.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\PagedList.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\PagedList.Mvc.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.Helpers.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.Mvc.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.Optimization.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.Razor.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.WebPages.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.WebPages.Deployment.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Release\System.Web.WebPages.Razor.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\Labixa.csprojResolveAssemblyReference.cache
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\Labixa.App_Data.Resources.resources
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\Labixa.App_Data.Resources.en.resources
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\Labixa.App_Data.Resources.vi.resources
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\Labixa.csproj.GenerateResource.Cache
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\en\Labixa.resources.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\vi\Labixa.resources.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\Labixa.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Release\Labixa.pdb

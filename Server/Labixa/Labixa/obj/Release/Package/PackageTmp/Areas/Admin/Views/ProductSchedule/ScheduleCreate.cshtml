@@ -1,0 +1,99 @@
+﻿@using Outsourcing.Core
+@model Labixa.Areas.Admin.ViewModel.ProductScheduleFormModel
+@{
+    ViewBag.Title = "Tạo mới lịch trình";
+}
+@section scripts{
+    <script src="~/Content/ckeditor/ckeditor.js"></script>
+    <script src="~/Content/ckeditor/config.js"></script>
+}
+@section breadcrumb
+{
+    <div class="breadcrumbs" id="breadcrumbs">
+        <script type="text/javascript">
+            try { ace.settings.check('breadcrumbs', 'fixed') } catch (e) { }
+        </script>
+
+        <ul class="breadcrumb">
+            <li>
+                <a href="/Admin">Trang chủ <i class="fa fa-home" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="/Admin/ProductSchedule/Schedule">Lịch trình <i class="fa fa-calendar" aria-hidden="true"></i></a>
+            </li>
+            <li class="active">
+                Thêm mới <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </div>
+}
+<div class="page-content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="alert alert-block alert-info">
+                Thêm mới sản phẩm
+            </div>
+            @using (Html.BeginForm("ScheduleCreate", "ProductSchedule", null, FormMethod.Post, new { @class = "form-horizontal" }))
+            {
+                @Html.ValidationSummary(true)
+                <div class="tabbable">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="active">
+                            <a data-toggle="tab" href="#tab1">
+                                <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                                Nội dung
+                            </a>
+                        </li>
+                        <li class="">
+                            <a data-toggle="tab" href="#tab3">
+                                <i class="fa fa-tag" aria-hidden="true"></i>
+                                Thuộc tính lịch trình
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane fade active in">
+                            <div class="form-group ">
+                                <label class="col-sm-3 control-label no-padding-right">Tour</label>
+                                <div class="col-sm-9">
+                                    @Html.DropDownListFor(model => model.ProductId, Model.ListProduct)
+                                    @Html.ValidationMessageFor(model => model.ProductId)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right">Còn đặt được</label>
+                                <div class="col-sm-9">
+                                    @Html.EditorFor(model => model.IsAvailable)
+                                    @Html.ValidationMessageFor(model => model.IsAvailable)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right">Giá</label>
+                                <div class="col-sm-9">
+                                    @Html.EditorFor(model => model.Price)
+                                    @Html.ValidationMessageFor(model => model.Price)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label no-padding-right">Số chỗ tối đa</label>
+                                <div class="col-sm-9">
+                                    @Html.EditorFor(model => model.MaxQuantity)
+                                    @Html.ValidationMessageFor(model => model.MaxQuantity)
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab-pane fade">
+                            <div class="form-group ">
+                                Bạn cần tạo sản phẩm trước khi chỉnh sửa thuộc tính
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*
+                    partial for group button
+                *@
+                @Html.Partial("_PartialButtonGroup", "/Admin/ProductSchedule")
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\Outsourcing.Data.dll.config
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\Outsourcing.Data.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\Outsourcing.Data.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\EntityFramework.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\EntityFramework.SqlServer.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\PagedList.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\EntityFramework.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\EntityFramework.SqlServer.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\bin\Release\PagedList.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\obj\Release\Outsourcing.Data.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\obj\Release\Outsourcing.Data.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Outsourcing.Data\obj\Release\Outsourcing.Data.csprojResolveAssemblyReference.cache
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\obj\Release\Outsourcing.Data.csprojResolveAssemblyReference.cache
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\obj\Release\Outsourcing.Data.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\obj\Release\Outsourcing.Data.pdb
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\Outsourcing.Data.dll.config
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\Outsourcing.Data.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\Outsourcing.Data.pdb
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\EntityFramework.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\EntityFramework.SqlServer.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\PagedList.dll
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\EntityFramework.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\EntityFramework.SqlServer.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Works\Ads Network\Server\Labixa\Outsourcing.Data\bin\Release\PagedList.xml

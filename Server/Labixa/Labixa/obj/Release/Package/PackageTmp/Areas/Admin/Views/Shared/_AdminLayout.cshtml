@@ -1,0 +1,185 @@
+﻿@model dynamic
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Style/Common")
+    @RenderSection("head", required: false)
+    @Scripts.Render("~/Scripts/Common")
+    @RenderSection("scripts", required: false)
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body onload="delete_cookie('_culture')">
+    <div class="navbar navbar-default" id="navbar">
+        <script type="text/javascript">
+            try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+        </script>
+        <div class="navbar-container" id="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="/Admin" class="navbar-brand">
+                    <small>
+                        <i class="icon-money icon-large"></i>
+                        Quản lý website
+                    </small>
+                </a>
+            </div>
+            <div class="navbar-header pull-right" role="navigation">
+                <ul class="nav ace-nav">
+                    <li class="light-blue">
+                        <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <span class="user-info">
+                                <small>Welcome,</small>
+                                @User.Identity.Name
+                            </span>
+                            <i class="icon-caret-down"></i>
+                        </a>
+                        <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                            <li>
+                                <a href="#">
+                                    <i class="icon-cog"></i>
+                                    Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-user"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container-inner">
+        <div class="sidebar" id="sidebar">
+            <ul class="nav nav-list">
+                @* THƯ MỤC LƯU TRỮ *@
+                <li>
+                    <a href="/Admin/File">
+                        <div style="width: 30px; float: left"><i class="fa fa-picture-o" aria-hidden="true"></i></div>
+                        <span class="menu-text">Thư mục lưu trữ</span>
+                    </a>
+                </li>
+                @* QUẢN LÝ WEBSITE *@
+                <li>
+                    <a href="/Admin/WebsiteAttribute/" class="dropdown-toggle">
+                        <div style="width: 30px; float: left"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+                        <span class="menu-text">Quản lý Website</span>
+                    </a>
+                </li>
+                @* TOUR *@
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <div style="width: 30px; float: left"><i class="fa fa-plane" aria-hidden="true"></i></div>
+                        <span class="menu-text">Tour</span>
+                    </a>
+                    <ul class="submenu" style="overflow: hidden; display: none;">
+                        <li>
+                            <a href="/Admin/Product/Tour"><i class="fa fa-search" aria-hidden="true"></i> Xem tất cả</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Product/TourCreate"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm mới</a>
+                        </li>
+                    </ul>
+                </li>
+                @* LỊCH TRÌNH *@
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <div style="width: 30px; float: left"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                        <span class="menu-text">Lịch trình</span>
+                    </a>
+                    <ul class="submenu" style="overflow: hidden; display: none;">
+                        <li>
+                            <a href="/Admin/ProductSchedule/Schedule"><i class="fa fa-search" aria-hidden="true"></i> Xem tất cả</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/ProductSchedule/ScheduleCreate"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm mới</a>
+                        </li>
+                    </ul>
+                </li>
+                @* KHÁCH SẠN *@
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <div style="width: 30px; float: left"><i class="fa fa-building" aria-hidden="true"></i></div>
+                        <span class="menu-text">Khách sạn</span>
+                    </a>
+                    <ul class="submenu" style="overflow: hidden; display: none;">
+                        <li>
+                            <a href="/Admin/Product/Hotel"><i class="fa fa-search" aria-hidden="true"></i> Xem tất cả</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Product/HotelCreate"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm mới</a>
+                        </li>
+                    </ul>
+                </li>
+                @* PHÒNG *@
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <div style="width: 30px; float: left"><i class="fa fa-bed" aria-hidden="true"></i></div>
+                        <span class="menu-text">Phòng</span>
+                    </a>
+                    <ul class="submenu" style="overflow: hidden; display: none;">
+                        <li>
+                            <a href="/Admin/ProductSchedule/Room"><i class="fa fa-search" aria-hidden="true"></i> Xem tất cả</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/ProductSchedule/RoomCreate"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm mới</a>
+                        </li>
+                    </ul>
+                </li>  
+                @* ĐƠN ĐẶT HÀNG *@
+                <li>
+                    <a href="/Admin/Order" class="dropdown-toggle">
+                        <div style="width: 30px; float: left"><i class="fa fa-usd" aria-hidden="true"></i></div>
+                        <span class="menu-text">Đơn đặt hàng</span>
+                    </a>
+                </li>
+                @* BÀI VIẾT *@
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <div style="width: 30px; float: left"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                        <span class="menu-text">Bài viết</span>
+                    </a>
+                    <ul class="submenu" style="overflow: hidden; display: none;">
+                        <li>
+                            <a href="/Admin/Blog"><i class="fa fa-search" aria-hidden="true"></i> Xem tất cả</a>
+                        </li>
+                        <li>
+                            <a href="/Admin/Blog/Create"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm mới</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="Account/SignOut" class="dropdown-toggle">
+                        <div style="width: 30px; float: left"><i class="fa fa-sign-out" aria-hidden="true"></i></div>
+                        <span class="menu-text">Đăng xuất</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- /.nav-list -->
+            <div class="sidebar-collapse" id="sidebar-collapse">
+                <i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+            </div>
+        </div>
+
+        <div class="main-content">
+            @RenderSection("breadcrumb", required: false)
+
+            <div class="page-content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>

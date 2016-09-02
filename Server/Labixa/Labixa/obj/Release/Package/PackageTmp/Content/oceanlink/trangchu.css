@@ -1,0 +1,582 @@
+﻿.slide-frame {
+	position: absolute;
+	background-image: url(../../Images/oceanlink/frame.png);
+	-webkit-background-size: 100% 100%;
+  	-moz-background-size: 100% 100%;
+  	-o-background-size: 100% 100%;
+  	background-size: 100% 100%;
+  	z-index: 90;
+  	height: 40%;
+  	width: 100%;
+  	bottom: -2px;
+  	margin: 0;
+  	padding: 0;
+}
+
+.round-button {
+  	background-image: url(../../Images/oceanlink/down-index.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+  	position: absolute;
+  	z-index: 100;
+  	height: 50px;
+  	width: 100px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	left: 0;
+  	right: 0;
+  	bottom: 4%;
+}
+
+.round-button a {
+  	display:block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	left: 0;
+  	right: 0;
+  	bottom: 5%;
+  	text-align: center;
+  	color: rgb(89, 89, 91);
+  	font-size:40px;
+  	text-decoration:none;
+  	margin-top: 10%;
+}
+
+.round-button a:hover {
+  	color: rgb(89, 89, 91);
+}
+
+.slogan {
+  	text-align: center;
+  	color: #13BF99;
+  	font-size: 50px;
+  	font-weight: 300;
+}
+
+.slogan-container-text {
+  	text-align: center;
+}
+
+.plane {
+  	font-size: 20px;
+  	color: #3F9D0B;
+}
+
+.bus {
+  	font-size: 20px;
+  	color: #E68E12;
+}
+
+.visa {
+  	font-size: 20px;
+  	color: #19A0E4;
+}
+
+.map {
+	margin-top: 100px;
+	background-image: url(../../Images/oceanlink/map.png);
+    -webkit-background-size: 90% 60%; /* For WebKit*/
+    -moz-background-size: 90% 60%;    /* Mozilla*/
+    -o-background-size: 90% 60%;      /* Opera*/
+    background-size: 90% 60%;         /* Generic*/
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.search {
+	background-image: url(../../Images/oceanlink/search.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+    -moz-box-shadow: inset 0px -20px 50px -5px black;
+   	-webkit-box-shadow: inset 0px -20px 50px -5px black;
+   	box-shadow: inset 0px -20px 50px -5px black;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.search-text {
+	padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 5px;
+}
+
+.search-text-content {
+	font-size: 22px;
+	color: white;
+}
+
+.search-form {
+	padding-left: 0px;
+    padding-right: 0px;
+}
+
+.search-input {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#search {
+	border-radius: 5px;
+	width: 100%;
+}
+
+.search-group-button {
+	padding-left: 0px;
+	text-align: right;
+	width: 22%;
+}
+
+.search-menu {
+    right: 0;
+}
+
+.search-group-button-content {
+}
+
+.search-group-button-content > div {
+	padding-left: 5px;
+	padding-right: 0px;
+}
+
+.search-group-button-content > div > button {
+	height: 41px;
+	width: 100%;
+}
+
+.search-group-button-content > .btn-group {
+	padding-left: 5px;
+	padding-right: 0px;
+}
+
+.search-group-button-content > .btn-group > button {
+	height: 41px;
+	width: 100%;
+	margin-right: 5px;
+}
+
+.c-right {
+	font-size: 10px;
+	float: right;
+	margin-top: 5px 
+}
+
+.background-gray {
+	background-image: url(../../Images/oceanlink/background.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+}
+
+.wrapper-tour {
+	padding-bottom: 50px;
+}
+
+.wrapper-tour-promo {
+	padding-bottom: 60px;
+}
+
+.tour {
+	margin-top: 50px;
+}
+
+#tour-in-hot-carousel,
+#tour-in-new-carousel,
+#tour-out-hot-carousel,
+#tour-out-new-carousel {
+    padding: 0px;
+}
+
+.tour-head {
+	padding-right: 0px;
+    padding-left: 0px;
+}
+
+.tour-head-in,
+.tour-head-out {
+	height: 100px;
+	top: auto;
+	bottom: auto;
+	margin: auto;
+}
+
+.tour-head-promo {
+	height: 100px;
+	top: auto;
+	bottom: auto;
+	margin: auto;
+	text-align: center;
+}
+
+.tour-head-in > div > div > div > div > .btn-active {
+	background-color: rgb(219, 29, 29);
+	color: white;
+}
+
+.tour-head-out > div > div > div > div > .btn-active {
+	background-color: #10a58b;
+	color: white;
+}
+
+#tour-in-hot,
+#tour-in-new,
+#tour-out-hot,
+#tour-out-new {
+	padding-top: 11px;
+	font-size: 14px;
+}
+
+.tour-head-text {
+	text-align: left;
+	font-size: 25px;
+	display: inline-block;
+    margin-top: 5px;
+}
+
+.tour-head-switch {
+	text-align: center;
+	font-size: 20px;
+}
+
+.tour-in {
+	color: rgb(201, 25, 25);
+	font-size: 24px;
+}
+
+.tour-out {
+	color: #0a8c75;
+    font-size: 26px;
+}
+
+.tour-promo {
+	color: rgb(50, 51, 35);
+	font-size: 35px;
+}
+
+.btn-hot {
+    padding-left: 10px;
+	width: 115px;
+}
+
+#tour-in-button-1,
+#tour-in-button-2,
+#tour-out-button-1,
+#tour-out-button-2 {
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.tour-head-line {
+	padding: 0px;
+}
+
+.btn-new {
+	width: 115px;
+	
+}
+
+.btn-not-active {
+	background: white;
+	border: 1px solid rgb(225, 225, 225);
+	color: rgb(86, 86, 84);
+}
+
+.tour-head-button {
+    padding-right: 0px;
+}
+
+.tour-head-button > .button {
+	background-color: white;
+	border: 1px solid rgb(225, 225, 225);
+	box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 5px rgba(255,255,255,0.6);
+	text-shadow: 0px -1px 3px rgba(255,255,255,0.8), 0px 1px 0px rgba(255,255,255,0.3);
+}
+
+.tour-head-button > .l {
+	background-image: url(../../Images/oceanlink/button-left.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+}
+
+.tour-head-button > .r {
+	background-image: url(../../Images/oceanlink/button-right.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+}
+
+.tour-head-line > hr {
+	display: block;
+    border-top: 2px solid rgb(161, 161, 161);
+}
+
+.tour-post {
+	z-index: 10;
+	border: 1px solid #b2b2b2;
+	margin-bottom: 30px;
+}
+
+.effect2 {
+	position: relative;
+}
+
+.effect2:before, .effect2:after
+{
+	z-index: 0;
+  	position: absolute;
+  	content: "";
+  	bottom: 12px;
+  	left: 20px;
+  	width: 50%;
+  	top: 70%;
+  	max-width: 300px;
+  	box-shadow: 0 15px 10px black;
+  	transform: rotate(-4deg);
+}
+.effect2:after
+{
+  transform: rotate(4deg);
+  z-index: -1;
+  right: 10px;
+  left: auto;
+}
+
+.tour-post-title {
+	padding: 5px 10px 5px 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+    font-size: 13px;
+	color: black;
+    white-space: normal;
+}
+
+.tour-post-location {
+	padding: 5px 10px 5px 10px;
+	color: rgb(159, 159, 159);
+    white-space: normal;
+    font-size: 13px;
+}
+
+.content-hide {
+    font-size: 13px;
+}
+
+.content-hide > hr {
+	margin: 0px 5px 0px 5px;
+	border-top: 1px solid rgb(225, 225, 225);
+}
+
+.tour-post-text-hide {
+	margin: 0px;
+	padding: 5px 10px 5px 10px; 
+}
+
+.tour-price {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgb(205, 20, 20);
+    border-right: 1px solid #b2b2b2;
+    text-align: center;
+}
+
+.blog-price > .col-sm-5 {
+	height: 100%;
+	padding: 0px;
+}
+
+.tour-booking {
+	margin: 3px 3px 3px 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	text-decoration: none;
+	color: rgb(58, 56, 57);
+    text-align: center;
+    font-size: 13px;
+}
+
+.tour-booking > a {
+	text-decoration: none;
+	color: black;
+}
+
+.tour-booking > a > img {
+	margin-right: 10px;
+}
+
+.tour-booking > a > span {
+	font-weight: 500;
+}
+
+.tour-booking:hover {
+	background-color: #f3c50f;
+}
+
+#tour-promo-scroll {
+	min-height: 100%;
+    height: auto; 
+}
+
+#tour-promo-scroll > .row {
+ 	overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}    
+#tour-promo-scroll > .row > .col-xs-12,
+#tour-promo-scroll > .row > .col-sm-6,
+#tour-promo-scroll > .row > .col-md-3,
+#tour-promo-scroll > .row > col-lg-3  {
+    float: none;	
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.information {
+	margin-top: 50px;
+}
+
+.information-title {
+	color: #474747;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 6px;
+}
+
+.hr1 {
+	padding-right: 0px;
+}
+
+.hr2 {
+	padding-left: 0px;
+}
+
+.hr1-content {
+	display: block;
+    border-top: 2px solid #e51a1a;
+    margin-top: 12px;
+}
+.hr2-content {
+	display: block;
+    border-top: 2px solid #dddddd;
+    margin-right: 50px;
+    margin-top: 12px;
+}
+
+.feedback-post-thumb > img {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+}
+
+.recent-post-info a {
+    font-size: 13px;
+}
+
+.recent-post-info span {
+    font-size: 11px;
+}
+
+.recent-post-thumb > img {
+    height: 100%;
+	width: 100%;
+}
+
+.recent-post > div > span {
+	color: black;
+	display: block;
+	font-weight: bold;
+    font-size: 13px;
+}
+
+.recent-post > .col-sm-3,
+.recent-post > .col-sm-4 {
+	padding-left: 0px;
+    padding-right: 0px;
+	text-align: center;
+}
+
+.left {
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+.left > span {
+	color: black;
+	font-size: 13px;
+}
+
+.tip {
+	background: #fff;
+	border: 1px solid rgb(225, 225, 225);
+	border-radius: 5px;
+	padding: 10px;
+	position: relative;
+	background: rgb(249, 249, 249);
+	box-shadow: 0 7px 2px -2px rgb(225, 225, 225);
+}
+	
+.tip:before {
+	position: absolute;
+	top: -14px;
+	left: 98px;
+	display: inline-block;
+	border-right: 10px solid transparent;
+	border-bottom: 10px rgb(249, 249, 249);
+	border-left: 10px solid transparent;
+	border-bottom-color: rgb(225, 225, 225);
+	content: '';
+}
+
+.tip:after {
+	position: absolute;
+	top: -12px;
+	left: 99px;
+	display: inline-block;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid rgb(249, 249, 249);
+	border-left: 8px solid transparent;
+	content: '';
+}
+
+.tip.left:before {
+	border-top: 10px solid transparent;
+	border-right: 10px solid rgb(249, 249, 249);
+	border-bottom: 10px solid transparent;
+	border-right-color: rgb(225, 225, 225);
+	left: -20px;
+	top: 20px;
+}
+
+.tip.left:after {
+	border-top: 8px solid transparent;
+	border-right: 8px solid rgb(249, 249, 249);
+	border-bottom: 8px solid transparent;
+	left: -16px;
+	top: 22px;
+}
+
+.about-content {
+	text-align: justify;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 20px;
+}
+
+.about-content > img {
+	width: 100%;
+}
+
+.tab-content {
+    font-size: 13px;
+}

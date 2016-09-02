@@ -1,0 +1,160 @@
+﻿@using Outsourcing.Data.Models
+@model IEnumerable<ProductSchedule>
+@{
+    ViewBag.Title = "Phòng";
+}
+@section scripts{
+    <script src="/Content/admin/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="/Content/admin/js/jquery.dataTables.bootstrap.js" type="text/javascript"></script>
+}
+@section breadcrumb
+{
+    <div class="breadcrumbs" id="breadcrumbs">
+    <script type="text/javascript">
+            try { ace.settings.check('breadcrumbs', 'fixed') } catch (e) { }
+    </script>
+
+    <ul class="breadcrumb">
+        <li>
+            <a href="/Admin">Trang chủ <i class="fa fa-home" aria-hidden="true"></i></a>
+        </li>
+        <li class="active">Phòng <i class="fa fa-bed" aria-hidden="true"></i></li>
+    </ul>
+</div>
+}
+<div class="page-content">
+    <div class="row">
+        <div class="col-xs-12">
+            <a class="btn btn-success" href="/Admin/ProductSchedule/RoomCreate" style="margin-bottom:10px">Thêm mới <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+            <div class="row" style="margin-bottom:10px">
+                <div class="col-sm-6">
+                    <div class="widget-box transparent">
+                        <div class="widget-body">
+                            <div class="widget-body-inner" style="display: block">
+                                <div class="widget-main no-padding col-sm-12">
+                                    <div class="profile-user-info profile-user-info-striped">
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name">
+                                                <label for="Remarks">Khách sạn</label>
+                                            </div>
+
+                                            <div class="profile-info-value">
+                                                <select class="filter_2">
+                                                    <option value="">Xem hết</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="profile-info-row">
+                                            <div class="profile-info-name">
+                                                <label for="Remarks">Trạng thái</label>
+                                            </div>
+
+                                            <div class="profile-info-value">
+                                                <select class="filter_5">
+                                                    <option value="">Xem hết</option>
+                                                    <option value="Hết chỗ">Hết phòng</option>
+                                                    <option value="Còn đặt được">Còn đặt được</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-header">Danh sách bài viết</div>
+            <table id="productScheduleTable" class="table table-bordered table-striped table-fixed-header">
+                <thead>
+                    <tr role="row">
+                        <th>STT</th>
+                        <th>Tên</th>
+                        <th>Khách sạn</th>
+                        <th>Giá</th>
+                        <th>Tình trạng</th>
+                        <th>Số phòng tối đa</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                    @if (Model != null && Model.Any())
+                    {
+                        int count = 0;
+                        foreach (var item in Model)
+                        {
+                            count++;
+                            <tr class="odd">
+                                <td class="sorting_1">@count</td>
+                                <td class="hidden-480">@item.ProductScheduleAttributeMappings.ToList()[0].Value</td>
+                                <td class="hidden-480">@item.Product.Name</td>
+                                <td class="hidden-480">@item.Price</td>
+                                <td class="hidden-480">
+                                    @if (!item.IsAvailable)
+                                    {
+                                        <span class="label label-sm label-warning">Hết phòng</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="label label-sm label-success">Còn đặt được</span>
+                                    }
+                                </td>
+                                <td class="hidden-480 ">@item.MaxQuantity</td>
+                                <td>
+                                    <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+                                        <a href="/Admin/ProductSchedule/RoomEdit?productScheduleId=@item.Id" class="btn btn-xs btn-info">
+                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="/Admin/ProductSchedule/RoomDelete?productScheduleId=@item.Id" class="btn btn-xs btn-danger">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        var table = $("#productScheduleTable").DataTable();
+        //var arrayfilter = [2, 4];
+        createDropFilter(table, [2]);
+        bindDropFilter(table, [5]);
+
+    });
+
+    function createDropFilter(table, array) {
+        array.forEach(function (i) {
+            var selector = ".filter_" + i;
+            var filter1 = $(selector);
+            filter1.on('change', function () {
+                table.column(i)
+                    .search($(this).val())
+                    .draw();
+            });
+
+            table.column(i).data().unique().sort().each(function (d, j) {
+                filter1.append('<option value="' + d + '">' + d + '</option>');
+            });
+
+        });
+    }
+    function bindDropFilter(table, array) {
+        array.forEach(function (i) {
+            var selector = ".filter_" + i;
+            var filter1 = $(selector);
+            filter1.on('change', function () {
+                console.log($(this));
+                table.column(i)
+                    .search($(this).val())
+                    .draw();
+            });
+        });
+    }
+</script>

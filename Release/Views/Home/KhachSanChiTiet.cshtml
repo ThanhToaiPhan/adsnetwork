@@ -1,0 +1,364 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutOceanlinkTour.cshtml";
+}
+@model List<Outsourcing.Data.Models.Product>
+@{ 
+    var current_tour = Model.First();
+    var list_tour_relevant = new List<Outsourcing.Data.Models.Product>();
+    for (int i = 1; i < Model.Count; i++)
+    { 
+        list_tour_relevant.Add(Model[i]);
+    }
+    var prefix = "/khach-san/";
+    var count = 0;
+    var class_active = "";
+}
+<link rel="stylesheet" href="~/Content/oceanlink/khachsanchitiet.css" />
+<script type="text/javascript" src="~/Scripts/khachsanchitiet.js"></script>
+<div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tour-banner effect2">
+        <div class="flexslider" style="position: relative; height: 500px; width: 100%;">
+            <ul class="slides" style="position: absolute; height: 500px; width: 100%;">
+                @foreach (var item in current_tour.ProductPictureMappings.Where(ppm => !ppm.IsMainPicture && ppm.Picture.Url != null).ToList())
+                {
+                    <li style="height: 490px; background: url(@item.Picture.Url); background-size: 100% 100%;">
+                    </li>
+                }
+            </ul>
+            <div class="col-xs-0 col-sm-9 col-md-9 col-lg-9">
+
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 tour-info">
+                <span class="tour-name">@current_tour.Name</span>
+                <hr />
+                <span class="tour-info-detail"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> @current_tour.Description</span>
+                <hr />
+                <div class="tour-info-detail">
+                    <span style="font-weight: bold;">Quốc gia:</span>
+                    <span class="pull-right">@current_tour.ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Quốc gia").FirstOrDefault().Value</span>
+                </div>
+                <p></p>
+                <div class="tour-info-detail">
+                    <span style="font-weight: bold;">Tỉnh:</span>
+                    <span class="pull-right">@current_tour.ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Tỉnh").FirstOrDefault().Value</span>
+                </div>
+                <p></p>
+                <div class="tour-info-detail">
+                    <span style="font-weight: bold;">Thành phố:</span>
+                    <span class="pull-right">@current_tour.ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Thành phố").FirstOrDefault().Value</span>
+                </div>
+                <p></p>
+                <div class="tour-info-detail">
+                    <span style="font-weight: bold;">Số phòng:</span>
+                    <span class="pull-right">@current_tour.ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Số phòng").FirstOrDefault().Value</span>
+                </div>
+                <p></p>
+                <div class="tour-info-detail">
+                    <span style="font-weight: bold;">Chất lượng:</span>
+                    @switch (@current_tour.ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Chất lượng").FirstOrDefault().Value)
+                    {
+                        case "1":
+                            <img class="pull-right" src="~/Images/oceanlink/star1.png" />
+                            break;
+                        case "2":
+                            <img class="pull-right" src="~/Images/oceanlink/star2.png" />
+                            break;
+                        case "3":
+                            <img class="pull-right" src="~/Images/oceanlink/star3.png" />
+                            break;
+                        case "4":
+                            <img class="pull-right" src="~/Images/oceanlink/star4.png" />
+                            break;
+                        case "5":
+                            <img class="pull-right" src="~/Images/oceanlink/star5.png" />
+                            break;
+                        default:
+                            <img class="pull-right" src="~/Images/oceanlink/star0.png" />
+                            break;
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tour-detail" style="padding: 0px;">
+        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7" style="padding-left: 0px;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 service" style="padding: 0px;">
+                <div class="service-head">
+                    <span><i class="fa fa-thumbs-up" aria-hidden="true"></i> CÁC TIỆN ÍCH CỦA KHÁCH SẠN</span>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 service-body">
+                    @for (int a = 5; a < 18; a++)
+                    {
+                        if (current_tour.ProductAttributeMappings.ToList()[a].Value == "true")
+                        {
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span><i style="color: #96bf49;" class="fa fa-check-circle" aria-hidden="true"></i> @current_tour.ProductAttributeMappings.ToList()[a].ProductAttribute.Name</span>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <span><i style="color: #c11919;" class="fa fa-times-circle" aria-hidden="true"></i> @current_tour.ProductAttributeMappings.ToList()[a].ProductAttribute.Name</span>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 service" style="padding: 0px; margin-top: 15px;">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a id="tour" href="#about" data-toggle="tab"><img src="~/Images/oceanlink/mota.png" /> <div style="float: right; margin: 2px 0px 0px 5px;">MÔ TẢ</div></a></li>
+                    <li><a id="policy" href="#about-event" data-toggle="tab"><img src="~/Images/oceanlink/sukien.png" /> <div style="float: right; margin: 2px 0px 0px 5px;">SỰ KIỆN</div></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="about">
+                        <div class="about-content">
+                            @Html.Raw(current_tour.Content)
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="about-event">
+                        <div class="about-content">
+                            @Html.Raw(current_tour.ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Sự kiện").FirstOrDefault().Value)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" style="padding: 0px;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 schedule-head" style="padding: 0px;">
+                <img style="float: left; margin: 4px 0px 0px 0px;" src="~/Images/oceanlink/chonphong.png" />
+                <div style="float: left; margin: 0px 0px 0px 5px;">CHỌN PHÒNG</div>
+                <div class="tour-similar-button">
+                    <a href="#" id="up-button-room" class="button pull-right"></a>
+                    <a href="#" id="down-button-room" class="button pull-right" style="margin-right: 10px;"></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 0px;">
+                <hr />
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 schedule-body" style="padding: 0px;">
+                <div class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner" role="listbox">
+                        @if (count != 0)
+                        {
+                            count = 0;
+                        }
+                        @while (count < current_tour.ProductSchedules.Count)
+                        {
+                            if (count == 0)
+                            {
+                                class_active = "active";
+                            }
+                            else
+                            {
+                                class_active = "";
+                            }
+                            <div class="item item-1 @class_active">
+                                @for (int i = count; i < count + 6; i++)
+                                {
+                                    if (i < current_tour.ProductSchedules.Count)
+                                    {
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 schedule-body-content">
+                                            <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 room-image" style="background: url(@current_tour.ProductSchedules.ToList()[i].ProductSchedulePictureMappings.ToList()[0].Picture.Url); background-size: 100% 100%;">
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 room-info">
+                                                <div class="room-name">
+                                                    <span>@current_tour.ProductSchedules.ToList()[i].ProductScheduleAttributeMappings.Where(psam => psam.ProductScheduleAttribute.Name == "Tên").FirstOrDefault().Value</span>
+                                                </div>
+                                                <div class="room-quantity">
+                                                    <span>Số người:	&nbsp;	&nbsp;	&nbsp;	&nbsp;</span>
+                                                    <span style="font-weight: normal;">@current_tour.ProductSchedules.ToList()[i].ProductScheduleAttributeMappings.Where(psam => psam.ProductScheduleAttribute.Name == "Số người").FirstOrDefault().Value</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-4 col-md-4 room-price">
+                                                <span>@current_tour.ProductSchedules.ToList()[i].Price.ToString("N0") VND</span> / Đêm
+                                                @if (current_tour.ProductSchedules.ToList()[i].IsAvailable)
+                                                {
+                                                    <a class="btn btn-room-view" href="/khach-san/@current_tour.Slug/@current_tour.ProductSchedules.ToList()[i].Id">
+                                                        <img src="~/Images/oceanlink/view_tour.png" />
+                                                        <span>XEM PHÒNG</span>
+                                                    </a>
+                                                }
+                                                else
+                                                {
+                                                    <div class="room-rent-out">
+                                                        <span>---- HẾT PHÒNG ----</span>
+                                                    </div>
+                                                }
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 room-service">
+                                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" style="padding-right: 0px;">
+                                                    <span class="util">TIỆN ÍCH: </span>
+                                                </div>
+                                                @if (current_tour.ProductSchedules.ToList()[i].ProductScheduleAttributeMappings.Where(psam => psam.ProductScheduleAttribute.Name == "Bữa sáng miễn phí").FirstOrDefault().Value == "true")
+                                                {
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding-right: 0px;">
+                                                        <span><i style="color: #96bf49;" class="fa fa-check-circle" aria-hidden="true"></i> Bữa sáng miễn phí</span>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding-right: 0px;">
+                                                        <span><i style="color: #c11919;" class="fa fa-times-circle" aria-hidden="true"></i> Bữa sáng miễn phí</span>
+                                                    </div>
+                                                }
+                                                @if (current_tour.ProductSchedules.ToList()[i].ProductScheduleAttributeMappings.Where(psam => psam.ProductScheduleAttribute.Name == "Wifi (miễn phí)").FirstOrDefault().Value == "true")
+                                                {
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding-left: 0px;">
+                                                        <span><i style="color: #96bf49;" class="fa fa-check-circle" aria-hidden="true"></i> Wifi (miễn phí)</span>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+                                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="padding-left: 0px;">
+                                                        <span><i style="color: #c11919;" class="fa fa-times-circle" aria-hidden="true"></i> Wifi (miễn phí)</span>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                            count = count + 6;
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 schedule-head" style="padding: 0px;">
+                <img style="float: left; margin: 4px 0px 0px 0px;" src="~/Images/oceanlink/chonphong.png" />
+                <div style="float: left; margin: 0px 0px 0px 5px;">KHÁCH SẠN LIÊN QUAN</div>
+                <div class="tour-similar-button">
+                    <a href="#" id="up-button-tour" class="button pull-right"></a>
+                    <a href="#" id="down-button-tour" class="button pull-right" style="margin-right: 10px;"></a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row tour-similar-body" style="padding: 0px;">
+                <div class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner" role="listbox">
+                        @if (count != 0)
+                        {
+                            count = 0;
+                        }
+                        @while (count < list_tour_relevant.Count)
+                        {
+                            if (count == 0)
+                            {
+                                class_active = "active";
+                            }
+                            else
+                            {
+                                class_active = "";
+                            }
+                            <div class="item item-z @class_active">
+                                @for (int i = count; i < count + 5; i++)
+                                {
+                                    if (i < list_tour_relevant.Count)
+                                    {
+                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 tour-post tour-post-1 effect4 xxx">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 blog-post-1">
+                                                <div class="blog-thumb-1" style="background-image: url(@list_tour_relevant[i].ProductPictureMappings.ToList()[0].Picture.Url);">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 blog-info">
+                                                <div class="blog-content-1">
+                                                    <div class="content-show-1">
+                                                        <div class="tour-post-title-1">
+                                                            <span>@list_tour_relevant[i].Name</span>
+                                                        </div>
+                                                        <div class="tour-post-star">
+                                                            @switch (@list_tour_relevant[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Chất lượng").FirstOrDefault().Value)
+                                                            {
+                                                                case "1":
+                                                                    <img src="~/Images/oceanlink/star11.png" />
+                                                                    break;
+                                                                case "2":
+                                                                    <img src="~/Images/oceanlink/star12.png" />
+                                                                    break;
+                                                                case "3":
+                                                                    <img src="~/Images/oceanlink/star13.png" />
+                                                                    break;
+                                                                case "4":
+                                                                    <img src="~/Images/oceanlink/star14.png" />
+                                                                    break;
+                                                                case "5":
+                                                                    <img src="~/Images/oceanlink/star15.png" />
+                                                                    break;
+                                                                default:
+                                                                    <img src="~/Images/oceanlink/star10.png" />
+                                                                    break;
+                                                            }
+                                                        </div>
+                                                        <hr />
+                                                        <div class="tour-post-location tour-post-location-1">
+                                                            <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> @list_tour_relevant[i].Description</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="content-hide-1">
+                                                        <div class="row tour-post-text-hide-1">
+                                                            <span>@list_tour_relevant[i].MetaDescription</span>
+                                                        </div>
+                                                        <hr />
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 available-service-1">
+                                                            @if (count != 0)
+                                                            {
+                                                                count = 0;
+                                                            }
+                                                            @for (int a = 5; a < 18; a++)
+                                                            {
+                                                                if (list_tour_relevant[i].ProductAttributeMappings.ToList()[a].Value == "true" && list_tour_relevant[i].ProductAttributeMappings.ToList()[a].ProductAttribute.Name.Length <= 16)
+                                                                {
+                                                                    count++;
+                                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                                        <span><i style="color: #96bf49;" class="fa fa-check-circle" aria-hidden="true"></i> @list_tour_relevant[i].ProductAttributeMappings.ToList()[a].ProductAttribute.Name</span>
+                                                                    </div>
+                                                                }
+                                                                if (count >= 4)
+                                                                {
+                                                                    break;
+                                                                }
+                                                            }
+                                                            @if (count < 4)
+                                                            {
+                                                                for (int b = 5; b < 18; b++)
+                                                                {
+                                                                    if (list_tour_relevant[i].ProductAttributeMappings.ToList()[b].Value == "false" && list_tour_relevant[i].ProductAttributeMappings.ToList()[b].ProductAttribute.Name.Length <= 16)
+                                                                    {
+                                                                        count++;
+                                                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                                            <span><i style="color: #c11919;" class="fa fa-times-circle" aria-hidden="true"></i> @list_tour_relevant[i].ProductAttributeMappings.ToList()[b].ProductAttribute.Name</span>
+                                                                        </div>
+                                                                    }
+                                                                    if (count >= 4)
+                                                                    {
+                                                                        break;
+                                                                    }
+                                                                }
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="blog-price-1">
+                                                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 tour-price-1">
+                                                        <span>@list_tour_relevant[i].Price.ToString("N0") VND</span>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5" style="padding: 3px; background-color: white;">
+                                                        <div class="tour-booking-1">
+                                                            <a href="@prefix@list_tour_relevant[i].Slug">
+                                                                <img src="~/Images/oceanlink/view_tour.png" />
+                                                                <span>XEM PHÒNG</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                            count = count + 5;
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

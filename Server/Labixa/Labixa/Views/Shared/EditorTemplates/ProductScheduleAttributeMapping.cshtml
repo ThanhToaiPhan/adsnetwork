@@ -1,0 +1,37 @@
+﻿@model Outsourcing.Data.Models.ProductScheduleAttributeMapping
+@{
+    var template = "";
+    if (Model.ProductScheduleAttribute.ControlType.ToLower().Equals("textarea"))
+    {
+        template = "Ckeditor";
+    }
+    else if (Model.ProductScheduleAttribute.ControlType.ToLower().Equals("text"))
+    {
+        template = "Text";
+    }
+    else if (Model.ProductScheduleAttribute.ControlType.ToLower().Equals("datetimestring"))
+    {
+        template = "DateTimeString";
+    }
+    else if (Model.ProductScheduleAttribute.ControlType.ToLower().Equals("int32string"))
+    {
+        template = "Int32String";
+    }
+    else if (Model.ProductScheduleAttribute.ControlType.ToLower().Equals("checkbox"))
+    {
+        template = "CheckBox";
+    }
+}
+<div class="form-group ">
+    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.ProductScheduleId)
+    @Html.HiddenFor(model => model.ProductScheduleAttributeId)
+    @Html.HiddenFor(model => model.IsRequired)
+    @Html.HiddenFor(model => model.DisplayOrder)
+
+    <label class="col-sm-3 control-label no-padding-right" for="">@Model.ProductScheduleAttribute.Name</label>
+    <div class="col-sm-9">
+        @Html.EditorFor(model => model.Value, template)
+        @Html.ValidationMessageFor(model => model.Value)
+    </div>
+</div>

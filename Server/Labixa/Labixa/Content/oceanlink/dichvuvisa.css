@@ -1,0 +1,489 @@
+﻿.tour {
+    padding: 0px;
+}
+
+.tour-top {
+    margin-top: 30px;
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+
+.tour-head > a,
+.tour-head > span {
+    font-size: 25px;
+    color: #f5702f;
+    text-decoration: none;
+}
+
+.tour-head > .tour-head-text-active {
+    font-weight: bold;
+}
+
+.effect2 {
+	position: relative;
+}
+
+.effect2:before, .effect2:after
+{
+	z-index: -1;
+  	position: absolute;
+  	content: "";
+  	bottom: 20px;
+  	left: 50px;
+  	width: 50%;
+  	top: 70%;
+  	box-shadow: 0 20px 20px black;
+  	transform: rotate(-2.5deg);
+}
+.effect2:after
+{
+  transform: rotate(2.5deg);
+  z-index: -1;
+  right: 50px;
+  left: auto;
+}
+
+.tour-control {
+    position: absolute;
+    overflow: hidden;
+}
+
+.c-left {
+    margin-left: -50px;
+    margin-top: 150px;
+    z-index: 10;
+}
+
+.c-right {
+    margin-left: 30px;
+    margin-top: 150px;
+    z-index: 10;
+}
+
+.content-hide {
+    margin-top: 5px;
+}
+
+.tour-post {
+	z-index: 10;
+	border: 1px solid #b2b2b2;
+	margin-bottom: 30px;
+}
+
+.tour-post-title {
+	padding: 5px 15px 5px 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+    white-space: normal;
+}
+
+.tour-post-location {
+	color: rgb(159, 159, 159);
+    white-space: normal;
+}
+
+.tour-post-star {
+	padding: 0px 15px 0px 15px;
+    white-space: normal;
+}
+
+.content-hide > hr {
+	margin: 0px 5px 0px 5px;
+	border-top: 1px solid rgb(225, 225, 225);
+}
+
+.content-hide-1 > hr {
+    margin: 0px 10px 0px 10px;
+	border-top: 1px solid rgb(225, 225, 225);
+}
+
+.tour-post-text-hide {
+	margin: 0px;
+	padding: 5px 10px 5px 10px; 
+}
+
+.tour-price {
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgb(205, 20, 20);
+    border-right: 1px solid #b2b2b2;
+}
+
+.blog-price > .col-sm-5 {
+	height: 100%;
+	padding: 0px;
+}
+
+.tour-booking {
+	margin: 3px 3px 3px 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	text-decoration: none;
+	color: rgb(58, 56, 57);
+    text-align: center;
+}
+
+.tour-booking > a {
+	text-decoration: none;
+	color: black;
+}
+
+.tour-booking > a > img {
+	margin-right: 20px;
+}
+
+.tour-booking > a > span {
+	font-weight: 500;
+}
+
+.tour-booking:hover {
+	background-color: #f3c50f;
+}
+
+.list-tour {
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.list-tour > div > div > span {
+    font-weight: bold;
+}
+
+.view-btn {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0px;
+    width: 50px;
+    font-family: 'FontAwesome';
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.view-btn:hover,
+.view-btn:visited,
+.view-btn:focus {
+    color: white;
+    outline: none;
+}
+
+#view-list {
+    background-color: #19a7b8;
+}
+
+#view-grid {
+    background-color: #50b036;
+}
+
+.view-active {
+    color: white;
+}
+
+.list-tour-line {
+    padding: 0px;
+}
+
+.list-tour-line > hr {
+    border-top: 2px solid rgb(161, 161, 161);
+}
+
+.tour-show-type {
+    margin-top: 5px;
+    padding-right: 0px;
+}
+
+.effect2-1 {
+	position: relative;
+}
+
+.effect2-1:before, .effect2-1:after
+{
+	z-index: 0;
+  	position: absolute;
+  	content: "";
+  	bottom: 12px;
+  	left: 20px;
+  	width: 50%;
+  	top: 70%;
+  	max-width: 300px;
+  	box-shadow: 0 15px 10px black;
+  	transform: rotate(-4deg);
+}
+.effect2-1:after
+{
+  transform: rotate(4deg);
+  z-index: -1;
+  right: 10px;
+  left: auto;
+}
+
+.effect4
+{
+  position: relative;
+}
+.effect4:after
+{
+  z-index: -10;
+  position: absolute;
+  content: "";
+  bottom: 12px;
+  right: 15px;
+  left: auto;
+  width: 600px;
+  top: 85%;
+  background: #777;
+  box-shadow: 0 15px 10px black;
+  transform: rotate(1.5deg);
+}
+
+
+.tour-post-1 {
+	border: 1px solid rgb(177, 177, 177);
+	padding: 0px;
+	margin-top: 30px;
+    background-color: white;
+    height: 170px;
+}
+
+.blog-post-1 {
+    padding: 5px;
+    height: 100%;
+    border-right: 1px solid rgb(177, 177, 177);
+    background-color: white;
+}
+
+.blog-thumb-1 {
+    height: 100%;
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+}
+
+.blog-content-1 {
+    margin: 0px;
+    position: relative;
+    height: 116px;
+}
+
+.content-hide-1 {
+    display: none;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    bottom: 0px;
+    background-color: white;
+}
+
+.blog-price-1 {
+    margin: 0px;
+    border-top: 1px solid rgb(225, 225, 225);
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.tour-post-title-1 {
+	padding: 5px 15px 5px 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+
+.tour-price-1 {
+	font-weight: bold;
+	font-size: 20px;
+	padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 0px;
+	color: rgb(205, 20, 20);
+    background-color: white;
+}
+
+.blog-info {
+     padding: 0px;
+     height: 100%;
+     position: relative;
+}
+
+.available-service {
+    padding: 0px;
+    font-size: 13px;
+}
+
+.available-service > div {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.available-service-1 {
+    padding: 0px;
+    font-size: 13px;
+}
+
+.available-service-1 > div {
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+}
+
+.blog-price-1 > .col-sm-5 {
+	padding: 0px;
+	padding-bottom: 0px;
+    border-left: 1px solid rgb(225, 225, 225);
+}
+
+.tour-booking-1 {
+    background-color: white;
+	height: 100%;
+	padding-top: 10px;
+    padding-bottom: 11px;
+	text-decoration: none;
+	color: rgb(58, 56, 57);
+	text-align: center;
+}
+
+.tour-booking-1 > a {
+	text-decoration: none;
+	color: black;
+}
+
+.tour-booking-1 > a > img {
+	margin-right: 10px;
+}
+
+.tour-booking-1 > a > span {
+	font-weight: 500;
+}
+
+.tour-booking-1:hover {
+	background-color: #f3c50f;
+}
+
+.tour-post-text-hide-1 {
+    margin: 0px;
+    padding: 3.5px 10px 3.5px 10px;
+}
+
+.ul-pager {
+    list-style: none;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.page-li {
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid transparent;
+}
+
+.li-active {
+    border: 1px solid #9d9d9d;
+}
+
+.page-li > a {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.content-show-1 > hr {
+    margin: 5px 10px 0px 10px;
+	border-top: 1px solid rgb(225, 225, 225);
+}
+
+.tour-post-location-1 {
+    padding: 5px 10px 5px 10px;
+}
+
+.page-number {
+    font-size: 80px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.page-1 {
+    color: #9444d9;
+    border: 5px solid #9444d9;
+}
+
+.page-2 {
+    color: #0bb6c0;
+    border: 5px solid #0bb6c0;
+}
+
+.page-3 {
+    color: #d53c51;
+    border: 5px solid #d53c51;
+}
+
+.page-text > .row {
+    margin: 0px;
+}
+
+.row-visa-1 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.list-blog {
+    margin-top: 50px;
+}
+
+.list-blog > div > ul > li {
+    border: 1px solid #b2b2b2;
+    margin-top: -1px;
+}
+
+.list-blog > div > ul > li > a {
+    color: black;
+    border-radius: 0px;
+}
+
+.list-blog > div > ul > .active > a {
+    background-color: #e07d06;
+}
+
+.list-blog > div > ul > .active > a:hover {
+    background-color: #e07d06;
+}
+
+.blog-current > div {
+    margin: 0px;
+}
+
+.hr1,
+.hr2{
+    padding: 0px;
+}
+
+.hr1 > hr,
+.hr2 > hr {
+    border-top: none;
+}
+
+.hr1 {
+    border-top: 3px solid #d53b53;
+}
+
+.hr2 {
+    border-top: 3px solid #b2b2b2;
+}
+
+.blog-title {
+    padding: 0px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: bold;
+}

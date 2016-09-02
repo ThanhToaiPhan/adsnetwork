@@ -1,0 +1,84 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutOceanlinkTour.cshtml";
+}
+@model Labixa.ViewModels.DatTourTrongNuocModel
+<link rel="stylesheet" href="~/Content/oceanlink/xemlaithongtinthuexe.css" />
+<script type="text/javascript" src="~/Scripts/xemlaithongtinthuexe.js"></script>
+<div class="container">
+    <div class="row tour-order-info">
+        <div class="tour-order-head">
+            <span class="tour-info-text">XÁC NHẬN THÔNG TIN THUÊ XE</span>
+        </div>
+    </div>
+    @using (Html.BeginForm("XacNhanThueXe", "Home", FormMethod.Post))
+    {
+        @Html.HiddenFor(model => model.customerAddress);
+        @Html.HiddenFor(model => model.customerEmail);
+        @Html.HiddenFor(model => model.customerName);
+        @Html.HiddenFor(model => model.customerPhone);
+        @Html.HiddenFor(model => model.quantityAdult);
+        @Html.HiddenFor(model => model.quantityChild);
+        @Html.HiddenFor(model => model.quantityBaby);
+        @Html.HiddenFor(model => model.note);
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 tour-order-customer effect2">
+            <div class="row information col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="customer-head">
+                    <span><img src="~/Images/oceanlink/pin.png" /> Thông tin khách hàng</span>
+                    <a class="btn back-button pull-right" onclick="goBack()"></a>
+                </div>
+                <div class="row order-input">
+                    <div>
+                        <span>Họ và tên:</span>
+                    </div>
+                    <span>@Model.customerName</span>
+                </div>
+                <div class="row order-input">
+                    <div>
+                        <span>Địa chỉ:</span>
+                    </div>
+                    <span>@Model.customerAddress</span>
+                </div>
+                <div class="row order-input">
+                    <div>
+                        <span>Điện thoại:</span>
+                    </div>
+                    <span>@Model.customerPhone</span>
+                </div>
+                <div class="row order-input">
+                    <div>
+                        <span>Email:</span>
+                    </div>
+                    <span>@Model.customerEmail</span>
+                </div>
+            </div>
+            <div class="row content col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="customer-head">
+                    <span><img src="~/Images/oceanlink/pin.png" /> Nội dung đăng kí</span>
+                    <a class="btn back-button pull-right" onclick="goBack()"></a>
+                </div>
+                <div class="row order-number-input">
+                    <div class="number">
+                        <span>Số lượng:</span>
+                    </div>
+                    <span style="font-weight: bold; margin-left: 40px;">Người lớn:</span>
+                    <span>@Model.quantityAdult</span>
+                    <span style="font-weight: bold; margin-left: 40px;">Trẻ em:</span>
+                    <span>@Model.quantityChild</span>
+                    <span style="font-weight: bold; margin-left: 40px;">Em bé:</span>
+                    <span>@Model.quantityBaby</span>
+                </div>
+                <div class="row order-input">
+                    <div class="number">
+                        <span>Ghi chú:</span>
+                    </div>
+                    <span>@Model.note</span>
+                </div>
+            </div>
+            <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 order-pointer"></div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 order-button">
+            <a href="" id="order-button" class="button button-3d button-rounded">XÁC NHẬN THÔNG TIN <img style="margin-left: 10px;" src="~/Images/oceanlink/order-ok.png" /></a>
+        </div>
+    }
+</div>
+

@@ -1,0 +1,168 @@
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Labixa.dll.config
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Labixa.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Labixa.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\en\Labixa.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\vi\Labixa.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Antlr3.Runtime.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Autofac.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Autofac.Integration.Mvc.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\AutoMapper.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\ELFinder.Connector.ASPNet.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\ELFinder.Connector.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\EntityFramework.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\EntityFramework.SqlServer.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\ImageProcessor.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.Google.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Web.Infrastructure.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\MoreLinq.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Newtonsoft.Json.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Outsourcing.Core.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Outsourcing.Data.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Outsourcing.Service.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Owin.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\PagedList.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\PagedList.Mvc.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.Helpers.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.Mvc.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.Optimization.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.Razor.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.WebPages.Deployment.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.WebPages.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.WebPages.Razor.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\WebGrease.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Outsourcing.Core.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Outsourcing.Data.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Outsourcing.Service.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Antlr3.Runtime.pdb
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Autofac.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Autofac.Integration.Mvc.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\AutoMapper.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\EntityFramework.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\EntityFramework.SqlServer.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.Google.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\MoreLinq.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\Newtonsoft.Json.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\PagedList.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\PagedList.Mvc.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.Helpers.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.Mvc.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.Optimization.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.Razor.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.WebPages.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.WebPages.Deployment.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\bin\System.Web.WebPages.Razor.xml
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\Labixa.csprojResolveAssemblyReference.cache
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\Labixa.App_Data.Resources.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\Labixa.App_Data.Resources.en.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\Labixa.App_Data.Resources.vi.resources
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\Labixa.csproj.GenerateResource.Cache
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\en\Labixa.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\vi\Labixa.resources.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\Labixa.dll
+D:\Works\Oceanlink\blueocean2\Labixa\Labixa\obj\Debug\Labixa.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Labixa.dll.config
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Labixa.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Labixa.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\en\Labixa.resources.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\vi\Labixa.resources.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Antlr3.Runtime.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Autofac.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Autofac.Integration.Mvc.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\AutoMapper.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\ELFinder.Connector.ASPNet.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\ELFinder.Connector.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\EntityFramework.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\EntityFramework.SqlServer.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\ImageProcessor.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.Google.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Web.Infrastructure.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\MoreLinq.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Newtonsoft.Json.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Outsourcing.Core.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Outsourcing.Data.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Outsourcing.Service.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Owin.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\PagedList.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\PagedList.Mvc.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.Helpers.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.Mvc.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.Optimization.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.Razor.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.WebPages.Deployment.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.WebPages.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.WebPages.Razor.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\WebGrease.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Outsourcing.Core.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Outsourcing.Data.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Outsourcing.Service.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Antlr3.Runtime.pdb
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Autofac.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Autofac.Integration.Mvc.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\AutoMapper.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\EntityFramework.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\EntityFramework.SqlServer.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.Google.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\MoreLinq.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\Newtonsoft.Json.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\PagedList.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\PagedList.Mvc.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.Helpers.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.Mvc.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.Optimization.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.Razor.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.WebPages.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.WebPages.Deployment.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\bin\System.Web.WebPages.Razor.xml
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\Labixa.csprojResolveAssemblyReference.cache
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\Labixa.App_Data.Resources.resources
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\Labixa.App_Data.Resources.en.resources
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\Labixa.App_Data.Resources.vi.resources
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\Labixa.csproj.GenerateResource.Cache
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\en\Labixa.resources.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\vi\Labixa.resources.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\Labixa.dll
+D:\Works\Ads Network\Server\Labixa\Labixa\obj\Debug\Labixa.pdb

@@ -1,0 +1,771 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutOceanlink.cshtml";
+}
+@model Labixa.ViewModels.TrangChuModel
+@{
+    var count = 0;
+    var class_active = "";
+    var prefix = "";
+}
+<link rel="stylesheet" href="~/Content/oceanlink/trangchu.css" />
+<script type="text/javascript" src="~/Scripts/trangchu.js"></script>
+<div id="slider">
+    <div class="flexslider">
+        <div id="top-header">
+            <div class="container">
+                <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="home-account">
+                            <span style="font-size: 13px; margin-right: 20px;"><i class="fa fa-phone"></i> @ViewBag.hotline</span>
+                            <a href="mailto:@ViewBag.mail"><i class="fa fa-edit"></i> @ViewBag.mail</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <div class="cart-info">
+                            <a href="mailto:@ViewBag.mail" style="margin-right: 10px;"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/lepetitcafetakeaway" target="_blank" style="margin-right: 10px;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.tumblr.com/" target="_blank" style="margin-right: 10px;"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/" target="_blank" style="margin-right: 10px;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                            <a href="skype:@ViewBag.skype[0].Value?chat" style="margin-right: 20px;"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                            <a href="#">Đăng nhập</a>
+                            <span>/</span>
+                            <a href="#">Đăng kí</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-frame"></div>
+        <div class="round-button" id="slide-to">
+            <div class="round-button-circle">
+                <a href="#" id="button-slide-down"><span class="text-carousel fa fa-angle-down" aria-hidden="true"></span></a>
+            </div>
+        </div>
+        <ul class="slides">
+            <li style="height: 800px; background: url(/Images/oceanlink/1.jpg); background-size: 100% 100%;">
+            </li>
+            <li style="height: 800px; background: url(/Images/oceanlink/2.jpg); background-size: 100% 100%;">
+            </li>
+            <li style="height: 800px; background: url(/Images/oceanlink/3.jpg); background-size: 100% 100%;">
+            </li>
+            <li style="height: 800px; background: url(/Images/oceanlink/4.jpg); background-size: 100% 100%;">
+            </li>
+            <li style="height: 800px; background: url(/Images/oceanlink/5.jpg); background-size: 100% 100%;">
+            </li>
+            <li style="height: 800px; background: url(/Images/oceanlink/6.jpg); background-size: 100% 100%;">
+            </li>
+        </ul>
+        <div id="slide-to"></div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="slogan">
+                    <span>RESERVATION</span>
+                </div>
+                <div class="slogan-container-text">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="col-sm-1" style="padding: 0px;">
+                            <img class="pull-right" src="~/Images/oceanlink/x1.png" />
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="row">
+                                <span style="font-size: 13px;">Natural wonders and majestic structures. Bustling cities and mythical ruins.</span>
+                            </div>
+                            <div class="row">
+                                <span style="font-size: 13px;">Mount-watering gastronomic experiences and exotic cultures.</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-1" style="padding: 0px;">
+                            <img class="pull-left" src="~/Images/oceanlink/x2.png" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row map">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="service-item" href="/dat-ve-may-bay">
+                    <div style="margin: 0px;"><img src="~/Images/oceanlink/plane.png"></div>
+                    <div class="plane">
+                        <span>DỊCH VỤ VÉ MÁY BAY</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="service-item" href="/thue-xe">
+                    <div style="margin: 0px;"><img src="~/Images/oceanlink/bus.png"></div>
+                    <div class="bus">
+                        <span>DỊCH VỤ CHO THUÊ XE</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <a class="service-item" href="/dich-vu-visa">
+                    <div style="margin: 0px;"><img src="~/Images/oceanlink/visa.png"></div>
+                    <div class="visa">
+                        <span>DỊCH VỤ VISA</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="search">
+        <div class="container" style="padding: 0px;">
+            <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 0px; margin: 0px;">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 search-text">
+                    <div class="search-text-content">
+                        <span style="font-weight: lighter;">BẠN ĐANG</span>
+                        <span style="font-weight: 500;">TÌM KIẾM TOUR ?</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 search-form">
+                    <form action="/tim-kiem-tour" method="get">
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 search-input">
+                            <input id="search" type="text" name="term" placeholder="Nhập từ khóa tìm kiếm..." />
+                            <input id="tour" type="hidden" name="tour" value="Tour trong nước" />
+                        </div>
+                        <div class="search-group-button-content">
+                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 btn-group">
+                                <button id="button-dropdown" class="btn dropdown-toggle btn-default btn-search" style="text-align: left;" data-toggle="dropdown" href="#">Tour trong nước<i class="fa fa-chevron-down c-right"></i></button>
+                                <ul class="dropdown-menu search-menu" id="search-dropdown">
+                                    <li><a href="#">Tour trong nước</a></li>
+                                    <li><a href="#">Tour nước ngoài</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                <button type="submit" id="button-search" class="col-sm-2 btn btn-default btn-search"><i class="fa fa-search" style="margin: 2px 7px 0px 0px;"></i>Tìm</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TOUR KHUYẾN MÃI -->
+<div class="wrapper wrapper-tour-promo background-gray">
+    <div class="container">
+        <div class="tour">
+            <div class="row">
+                <div class="tour-head-promo">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="tour-head-text tour-promo">
+                            <span style="font-weight: 300;">TOUR </span>
+                            <span style="font-weight: bold;">KHUYẾN MÃI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tour-promo-scroll">
+                <div class="row">
+                    @for (int i = 0; i < Model.listTourPromoHomePage.Count; i++)
+                    {
+                        if (i < Model.listTourPromoHomePage.Count)
+                        {
+                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                <div class="tour-post effect2">
+                                    <div class="row blog-post" style="margin: 0px;">
+                                        <div class="blog-thumb" style="background-image: url(@Model.listTourPromoHomePage[i].ProductPictureMappings.ToList()[0].Picture.Url);">
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="content-show">
+                                                <div class="tour-post-title">
+                                                    <span>@Model.listTourPromoHomePage[i].Name</span>
+                                                </div>
+                                                <div class="tour-post-location">
+                                                    <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> @Model.listTourPromoHomePage[i].Description</span>
+                                                </div>
+                                            </div>
+                                            <div class="content-hide">
+                                                <hr />
+                                                <div class="row tour-post-text-hide">
+                                                    <span style="font-weight: bold;">Thời gian khởi hành:</span>
+                                                    <span class="pull-right">@Model.listTourPromoHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Ngày đi").FirstOrDefault().Value</span>
+                                                </div>
+                                                <hr />
+                                                <div class="row tour-post-text-hide">
+                                                    <span style="font-weight: bold;">Thời gian đi:</span>
+                                                    <span class="pull-right">@Model.listTourPromoHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Thời gian đi").FirstOrDefault().Value</span>
+                                                </div>
+                                                <hr />
+                                                <div class="row tour-post-text-hide">
+                                                    <span style="font-weight: bold;">Phương tiện:</span>
+                                                    <span class="pull-right">@Model.listTourPromoHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Phương tiện").FirstOrDefault().Value</span>
+                                                </div>
+                                                <hr />
+                                                <div class="row tour-post-text-hide last-text-hide">
+                                                    <span style="font-weight: bold;">Khách sạn:</span>
+                                                    <span class="pull-right">@Model.listTourPromoHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Khách sạn").FirstOrDefault().Value</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row blog-price" style="margin: 0px;">
+                                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 tour-price">
+                                            <span>@Model.listTourPromoHomePage[i].Price.ToString("N0") VND</span>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                            <div class="tour-booking">
+                                                @if (Model.listTourPromoHomePage[i].ProductCategory.Name.Equals("Tour trong nước"))
+                                                {
+                                                    prefix = "/tour-trong-nuoc/";
+                                                }
+                                                else
+                                                {
+                                                    prefix = "/tour-nuoc-ngoai/";
+                                                }
+                                                <a href="@prefix@Model.listTourPromoHomePage[i].Slug">
+                                                    <img src="~/Images/oceanlink/view_tour.png" />
+                                                    <span>XEM TOUR</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TOUR TRONG NƯỚC -->
+<div class="wrapper wrapper-tour">
+    <div class="container">
+        <div class="tour">
+            <div class="row">
+                <div class="tour-head-in">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-sm-5 col-sm-5 col-sm-5 tour-head">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0px;">
+                                <a href="/tour-trong-nuoc">
+                                    <div class="tour-head-text tour-in">
+                                        <span style="font-weight: 300;">TOUR </span>
+                                        <span style="font-weight: bold;">TRONG NƯỚC</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0px;">
+                                <div class="btn-group tour-head-switch">
+                                    <button id="tour-in-hot" class="btn btn-lg btn-hot btn-active">TOUR NỔI BẬT</button>
+                                    <button id="tour-in-new" class="btn btn-lg btn-new btn-not-active">TOUR MỚI</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 tour-head-line">
+                            <hr />
+                        </div>
+                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 tour-head-button">
+                            <a href="#" id="tour-in-button-2" class="button r button-circle pull-right"></a>
+                            <a href="#" id="tour-in-button-1" class="button l button-circle pull-right" style="margin-right: 10px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="tour-in-hot-carousel" class="col-sm-12" style="padding: 0px;">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div id="tour-in-hot-carousel-inner" class="carousel-inner" role="listbox">
+                            @if (count != 0)
+                            {
+                                count = 0;
+                            }
+                            @while (count < Model.listTourInHotHomePage.Count)
+                            {
+                                if (count == 0)
+                                {
+                                    class_active = "active";
+                                }
+                                else
+                                {
+                                    class_active = "";
+                                }
+                                <div class="item item-in-hot @class_active">
+                                    @for (int i = count; i < count + 8; i++)
+                                    {
+                                        if (i < Model.listTourInHotHomePage.Count)
+                                        {
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                <div class="col-xs-12 col-xs-12 col-xs-12 col-xs-12 tour-post effect2">
+                                                    <div class="row blog-post">
+                                                        <div class="blog-thumb" style="background-image: url(@Model.listTourInHotHomePage[i].ProductPictureMappings.ToList()[0].Picture.Url);">
+                                                        </div>
+                                                        <div class="blog-content">
+                                                            <div class="content-show">
+                                                                <div class="tour-post-title">
+                                                                    <span>@Model.listTourInHotHomePage[i].Name</span>
+                                                                </div>
+                                                                <div class="tour-post-location">
+                                                                    <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> @Model.listTourInHotHomePage[i].Description</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-hide">
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Thời gian khởi hành:</span>
+                                                                    <span class="pull-right">@Model.listTourInHotHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Ngày đi").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Thời gian đi:</span>
+                                                                    <span class="pull-right">@Model.listTourInHotHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Thời gian đi").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Phương tiện:</span>
+                                                                    <span class="pull-right">@Model.listTourInHotHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Phương tiện").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide last-text-hide">
+                                                                    <span style="font-weight: bold;">Khách sạn:</span>
+                                                                    <span class="pull-right">@Model.listTourInHotHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Khách sạn").FirstOrDefault().Value</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row blog-price">
+                                                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 tour-price">
+                                                            <span>@Model.listTourInHotHomePage[i].Price.ToString("N0") VND</span>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                                            <div class="tour-booking">
+                                                                <a href="/tour-trong-nuoc/@Model.listTourInHotHomePage[i].Slug">
+                                                                    <img src="~/Images/oceanlink/view_tour.png" />
+                                                                    <span>XEM TOUR</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                                count = count + 8;
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="tour-in-new-carousel" class="col-sm-12" style="display: none;">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div id="tour-in-new-carousel-inner" class="carousel-inner" role="listbox">
+                            @if (count != 0)
+                            {
+                                count = 0;
+                            }
+                            @while (count < Model.listTourInNewHomePage.Count)
+                            {
+                                if (count == 0)
+                                {
+                                    class_active = "active";
+                                }
+                                else
+                                {
+                                    class_active = "";
+                                }
+                                <div class="item item-in-new @class_active">
+                                    @for (int i = count; i < count + 8; i++)
+                                    {
+                                        if (i < Model.listTourInNewHomePage.Count)
+                                        {
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                <div class="col-xs-12 col-xs-12 col-xs-12 col-xs-12 tour-post effect2">
+                                                    <div class="row blog-post">
+                                                        <div class="blog-thumb" style="background-image: url(@Model.listTourInNewHomePage[i].ProductPictureMappings.ToList()[0].Picture.Url);">
+                                                        </div>
+                                                        <div class="blog-content">
+                                                            <div class="content-show">
+                                                                <div class="tour-post-title">
+                                                                    <span>@Model.listTourInNewHomePage[i].Name</span>
+                                                                </div>
+                                                                <div class="tour-post-location">
+                                                                    <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> @Model.listTourInNewHomePage[i].Description</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-hide">
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Thời gian khởi hành:</span>
+                                                                    <span class="pull-right">@Model.listTourInNewHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Ngày đi").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Thời gian đi:</span>
+                                                                    <span class="pull-right">@Model.listTourInNewHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Thời gian đi").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Phương tiện:</span>
+                                                                    <span class="pull-right">@Model.listTourInNewHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Phương tiện").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide last-text-hide">
+                                                                    <span style="font-weight: bold;">Khách sạn:</span>
+                                                                    <span class="pull-right">@Model.listTourInNewHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Khách sạn").FirstOrDefault().Value</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row blog-price">
+                                                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 tour-price">
+                                                            <span>@Model.listTourInNewHomePage[i].Price.ToString("N0") VND</span>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                                            <div class="tour-booking">
+                                                                <a href="/tour-trong-nuoc/@Model.listTourInNewHomePage[i].Slug">
+                                                                    <img src="~/Images/oceanlink/view_tour.png" />
+                                                                    <span>XEM TOUR</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                                count = count + 8;
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TOUR NƯỚC NGOÀI -->
+<div class="wrapper wrapper-tour background-gray" id="about-to">
+    <div class="container">
+        <div class="tour">
+            <div class="row">
+                <div class="tour-head-out">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="col-xs-12 col-sm-5 col-sm-5 col-sm-5 tour-head">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0px;">
+                                <a href="/tour-nuoc-ngoai">
+                                    <div class="tour-head-text tour-out">
+                                        <span style="font-weight: 300;">TOUR </span>
+                                        <span style="font-weight: bold;">NƯỚC NGOÀI</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0px;">
+                                <div class="btn-group tour-head-switch">
+                                    <button id="tour-out-hot" class="btn btn-lg btn-hot btn-active">TOUR NỔI BẬT</button>
+                                    <button id="tour-out-new" class="btn btn-lg btn-new btn-not-active">TOUR MỚI</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 tour-head-line">
+                            <hr />
+                        </div>
+                        <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1 tour-head-button">
+                            <a href="#" id="tour-out-button-2" class="button r button-circle pull-right"></a>
+                            <a href="#" id="tour-out-button-1" class="button l button-circle pull-right" style="margin-right: 10px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="tour-out-hot-carousel" class="col-sm-12" style="padding: 0px;">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div id="tour-out-hot-carousel-inner" class="carousel-inner" role="listbox">
+                            @if (count != 0)
+                            {
+                                count = 0;
+                            }
+                            @while (count < Model.listTourOutHotHomePage.Count)
+                            {
+                                if (count == 0)
+                                {
+                                    class_active = "active";
+                                }
+                                else
+                                {
+                                    class_active = "";
+                                }
+                                <div class="item item-out-hot @class_active">
+                                    @for (int i = count; i < count + 8; i++)
+                                    {
+                                        if (i < Model.listTourOutHotHomePage.Count)
+                                        {
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                <div class="col-xs-12 col-xs-12 col-xs-12 col-xs-12 tour-post effect2">
+                                                    <div class="row blog-post">
+                                                        <div class="blog-thumb" style="background-image: url(@Model.listTourOutHotHomePage[i].ProductPictureMappings.ToList()[0].Picture.Url);">
+                                                        </div>
+                                                        <div class="blog-content">
+                                                            <div class="content-show">
+                                                                <div class="tour-post-title">
+                                                                    <span>@Model.listTourOutHotHomePage[i].Name</span>
+                                                                </div>
+                                                                <div class="tour-post-location">
+                                                                    <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> @Model.listTourOutHotHomePage[i].Description</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-hide">
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Thời gian khởi hành:</span>
+                                                                    <span class="pull-right">@Model.listTourOutHotHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Ngày đi").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Thời gian đi:</span>
+                                                                    <span class="pull-right">@Model.listTourOutHotHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Thời gian đi").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Phương tiện:</span>
+                                                                    <span class="pull-right">@Model.listTourOutHotHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Phương tiện").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide last-text-hide">
+                                                                    <span style="font-weight: bold;">Khách sạn:</span>
+                                                                    <span class="pull-right">@Model.listTourOutHotHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Khách sạn").FirstOrDefault().Value</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row blog-price">
+                                                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 tour-price">
+                                                            <span>@Model.listTourOutHotHomePage[i].Price.ToString("N0") VND</span>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                                            <div class="tour-booking">
+                                                                <a href="/tour-trong-nuoc/@Model.listTourOutHotHomePage[i].Slug">
+                                                                    <img src="~/Images/oceanlink/view_tour.png" />
+                                                                    <span>XEM TOUR</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                                count = count + 8;
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="tour-out-new-carousel" class="col-sm-12" style="display: none;">
+                    <div class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div id="tour-out-new-carousel-inner" class="carousel-inner" role="listbox">
+                            @if (count != 0)
+                            {
+                                count = 0;
+                            }
+                            @while (count < Model.listTourOutNewHomePage.Count)
+                            {
+                                if (count == 0)
+                                {
+                                    class_active = "active";
+                                }
+                                else
+                                {
+                                    class_active = "";
+                                }
+                                <div class="item item-out-new @class_active">
+                                    @for (int i = count; i < count + 8; i++)
+                                    {
+                                        if (i < Model.listTourOutNewHomePage.Count)
+                                        {
+                                            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                                                <div class="col-xs-12 col-xs-12 col-xs-12 col-xs-12 tour-post effect2">
+                                                    <div class="row blog-post">
+                                                        <div class="blog-thumb" style="background-image: url(@Model.listTourOutNewHomePage[i].ProductPictureMappings.ToList()[0].Picture.Url);">
+                                                        </div>
+                                                        <div class="blog-content">
+                                                            <div class="content-show">
+                                                                <div class="tour-post-title">
+                                                                    <span>@Model.listTourOutNewHomePage[i].Name</span>
+                                                                </div>
+                                                                <div class="tour-post-location">
+                                                                    <span><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> @Model.listTourOutNewHomePage[i].Description</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="content-hide">
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Thời gian khởi hành:</span>
+                                                                    <span class="pull-right">@Model.listTourOutNewHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Ngày đi").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Thời gian đi:</span>
+                                                                    <span class="pull-right">@Model.listTourOutNewHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Thời gian đi").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide">
+                                                                    <span style="font-weight: bold;">Phương tiện:</span>
+                                                                    <span class="pull-right">@Model.listTourOutNewHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Phương tiện").FirstOrDefault().Value</span>
+                                                                </div>
+                                                                <hr />
+                                                                <div class="row tour-post-text-hide last-text-hide">
+                                                                    <span style="font-weight: bold;">Khách sạn:</span>
+                                                                    <span class="pull-right">@Model.listTourOutNewHomePage[i].ProductAttributeMappings.Where(pam => pam.ProductAttribute.Name == "Khách sạn").FirstOrDefault().Value</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row blog-price">
+                                                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 tour-price">
+                                                            <span>@Model.listTourOutNewHomePage[i].Price.ToString("N0") VND</span>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                                                            <div class="tour-booking">
+                                                                <a href="/tour-trong-nuoc/@Model.listTourOutNewHomePage[i].Slug">
+                                                                    <img src="~/Images/oceanlink/view_tour.png" />
+                                                                    <span>XEM TOUR</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                                count = count + 8;
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper information">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="feedback">
+                    <div class="information-title">
+                        <span>NHẬN XÉT CỦA KHÁCH HÀNG</span>
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 hr1">
+                                <hr class="hr1-content" />
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 hr2">
+                                <hr class="hr2-content" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-post">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
+                        <div class="recent-post-thumb feedback-post-thumb">
+                            <img src="~/Images/oceanlink/feedback-logo.png" alt="">
+                        </div>
+                        <span>Trương Long</span>
+                    </div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <div class="tip left">
+                            <span>Wonderful!  Our Moroccan travel agency was absolutely wonderful. Wish I could give them 10 stars.  Let's start with the planning stage.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-post">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
+                        <div class="recent-post-thumb feedback-post-thumb">
+                            <img src="~/Images/oceanlink/feedback-logo-1.png" alt="">
+                        </div>
+                        <span>Man Huỳnh Khương</span>
+                    </div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <div class="tip left">
+                            <span>This travel agency was an excellent choice and was a large part of why my trip to Costa Rica was so enjoyable.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-post">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-md-3">
+                        <div class="recent-post-thumb feedback-post-thumb">
+                            <img src="~/Images/oceanlink/feedback-logo-2.png" alt="">
+                        </div>
+                        <span>Ngô Hoàng Duy</span>
+                    </div>
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <div class="tip left">
+                            <span>This company is FANTASTIC! I highly recommend using them. They were very easy to communicate with and really listened to the experience I wanted to have.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#about" data-toggle="tab">Về chúng tôi</a></li>
+                    <li><a href="#about-event" data-toggle="tab">Sự kiện</a></li>
+
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="about">
+                        <div class="about-content">
+                            @Html.Raw(ViewBag.about)
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="about-event">
+                        <div class="about-content">
+                            @Html.Raw(ViewBag.eventt)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="recent">
+                    <div class="information-title">
+                        <span>BÀI VIẾT MỚI</span>
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 hr1">
+                                <hr class="hr1-content" />
+                            </div>
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 hr2">
+                                <hr class="hr2-content" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-posts">
+                        @foreach (var item in Model.listNewBlog)
+                        {
+                            <div class="recent-post">
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                    <div class="recent-post-thumb">
+                                        <img src=@item.BlogImage alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                                    <div class="recent-post-info">
+                                        <a href="/dich-vu-visa/@item.Slug">@item.Title</a>
+                                        <br />
+                                        <span>@item.DateCreated.ToString("dddd") @item.DateCreated.ToString("MM/dd/yyyy")</span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>

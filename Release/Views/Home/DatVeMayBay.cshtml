@@ -1,0 +1,119 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutOceanlinkTour.cshtml";
+}
+@model Labixa.ViewModels.DatTourTrongNuocModel
+@{ 
+    char[] delimiterChars = { '-' };
+    string[] hotline = ViewBag.hotline.Split(delimiterChars);
+}
+<link rel="stylesheet" href="~/Content/oceanlink/datvemaybay.css" />
+<script type="text/javascript" src="~/Scripts/datvemaybay.js"></script>
+<div class="container">
+    <div style="text-align: center; font-size: 15px; margin-top: 30px;">
+        <span>Khách hàng có nhu cầu đặt vé máy bay vui lòng để lại thông tin gửi về email sau đó. Nhân viên sẽ liên hệ hỗ trợ.</span>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 0px; margin-top: 20px;">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 block-hotline">
+            <div class="hotline-title">
+                <span>HOTLINE:</span>
+            </div>
+            <div class="hotline-content">
+                <span class="row">- @hotline[0]</span>
+                <span class="row">- @hotline[1]</span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10" style="padding-right: 0px; padding-left: 5px;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 block-skype">
+                <div class="skype-title">
+                    <span>HỖ TRỢ TRỰC TUYẾN:</span>
+                </div>
+                <div class="skype-content">
+                    @foreach (var item in ViewBag.skype)
+                    {
+                        if (@item.Value != "skype")
+                        {
+                            <a class="col-xs-12 col-sm-3 col-md-3 col-lg-3 staff" href="skype:@item.Value?chat">
+                                <img src="~/Images/oceanlink/skype.png" />
+                                <span style="color: #1968ca">@item.Name</span>
+                            </a>
+                        }
+                        else
+                        {
+                            <span class="col-xs-12 col-sm-3 col-md-3 col-lg-3 staff" href="skype:@item.Value?chat">
+                                <img src="~/Images/oceanlink/skype_off.png" />
+                                <span style="color: #b2b2b2">@item.Name</span>
+                            </span>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="/xem-lai-thong-tin-dat-ve-may-bay" method="post">
+        <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12 tour-order-customer effect2" style="padding-left: 0px; padding-right: 0px;">
+            <div class="tour-order-head">
+                <div class="tour-order-circle">
+                    <img src="~/Images/oceanlink/order-3.png" />
+                </div>
+                <span class="tour-order-text">VUI LÒNG ĐIỀN ĐẦY ĐỦ THÔNG TIN</span>
+                <span class="sub-head" style="font-size: 13px;">Vui lòng điền đầy đủ thông tin bắt buộc (*)</span>
+            </div>
+            <hr />
+            <div class="row order-pointer">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 information">
+                    <div class="customer-head">
+                        <span><img src="~/Images/oceanlink/pin.png" /> Thông tin khách hàng</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 10px;">
+                        <div class="row order-input">
+                            <input type="text" name="customerName" id="customerName" />
+                            <span>Họ và tên (*):</span>
+                        </div>
+                        <div class="row order-input">
+                            <input type="text" name="customerAddress" id="customerAddress" />
+                            <span>Địa chỉ (*):</span>
+                        </div>
+                        <div class="row order-input">
+                            <input type="text" name="customerPhone" id="customerPhone" />
+                            <span>Điện thoại (*):</span>
+
+                        </div>
+                        <div class="row order-input">
+                            <input type="text" name="customerEmail" id="customerEmail" />
+                            <span>Email (*):</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 content">
+                    <div class="customer-head">
+                        <span><img src="~/Images/oceanlink/pin.png" /> Nội dung đăng kí</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="row order-number-input">
+                            <div class="row">
+                                <span>Em bé:</span>
+                                <input type="text" name="quantityBaby" id="quantityBaby" placeholder="0" />
+                            </div>
+                            <div class="row">
+                                <span>Trẻ em:</span>
+                                <input type="text" name="quantityChild" id="quantityChildren" placeholder="0" />
+                            </div>
+                            <div class="row">
+                                <span>Người lớn:</span>
+                                <input type="text" name="quantityAdult" id="quantityAdult" placeholder="0" />
+                            </div>
+                            <span>Số lượng (*):</span>
+                        </div>
+                        <div class="row order-des-input">
+                            <textarea name="note" id="note"></textarea>
+                            <span>Ghi chú:</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-button col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding: 0px;">
+            <a href="" id="order-button" class="button button-3d button-rounded">GỬI YÊU CẦU <img style="margin-left: 10px;" src="~/Images/oceanlink/order-send.png" /></a>
+        </div>
+    </form>
+</div>

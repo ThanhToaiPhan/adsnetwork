@@ -1,0 +1,280 @@
+﻿.tour-order-info {
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.tour-order-head {
+    text-align: center;
+}
+
+.tour-order-head > span {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.tour-info-text {
+    color: #019d8f;
+}
+
+.tour-order-circle {
+    width: 40px;
+    float: left;
+}
+
+.text-order {
+    margin-top: 10px;
+}
+
+.payment {
+    height: 34px;
+    float: right;
+    padding-left: 10px;
+    padding-top: 4px;
+    width: 75%;
+    margin-left: 10px;
+}
+
+.payment > span {
+    color: #65881f;
+    font-weight: bold;
+}
+
+.block {
+    padding: 0px;
+    background-color: #efefef;
+    border: 1px solid #b0b0b0;
+    height: 100px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+.block-name {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 40px 10px 40px;
+}
+
+.block-location {
+    border-top: 1px solid #b0b0b0;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px 40px 5px 40px;
+    color: #5f5f5f;
+    font-weight: bold;
+}
+
+.block-1, .block-2 {
+    border-right: none;
+}
+
+.block-2, .block-3 {
+    padding: 0px 40px 0px 40px;
+}
+
+.text-order-head {
+    font-weight: bold;
+    width: 150px;
+    float: left;
+}
+
+.text-order-price {
+    color: #db0b0b;
+    font-weight: bold;
+}
+
+.container > hr {
+    border-top: 0.5px solid #b2b2b2;
+}
+
+.tour-order-customer {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+
+.effect2 {
+	position: relative;
+}
+
+.effect2:before, .effect2:after {
+    z-index: -1;
+  	position: absolute;
+  	content: "";
+  	bottom: 20px;
+  	left: 50px;
+  	width: 60%;
+  	height: 70px;
+  	box-shadow: 0 20px 20px black;
+  	transform: rotate(-2.5deg);
+}
+.effect2:after {
+    z-index: -1;
+    transform: rotate(2.5deg);
+    right: 50px;
+    left: auto;
+}
+
+.information {
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+.tour-order-text {
+    color: #9c55d5;
+}
+
+.tour-order-customer hr {
+    border-top: 0.5px solid #b2b2b2;
+}
+
+.tour-order-customer input, textarea {
+    border: none;
+}
+
+.customer-head {
+    font-size: 20px;
+    color: #f15a07;
+    margin-bottom: 10px;
+}
+
+.sub-head {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #7b7b7b;
+    font-style: italic;
+}
+
+.content {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    position: relative;
+    border-left: 1px solid #b2b2b2;
+}
+
+.order-pointer:before {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -5px;
+    width: 40px;
+    height: 20px;
+    background: url(/Images/oceanlink/order-pointer.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+    border-width: 33px;
+}
+
+.order-input,
+.order-number-input,
+.order-des-input,
+.order-condition-input,
+.order-code-input {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.order-input > div > span,
+.order-number-input > div > span,
+.order-des-input > div > span,
+.order-condition-input > div > span,
+.order-code-input > div > span {
+    font-weight: bold;
+}
+
+.order-input > div {
+    width: 130px;
+    float: left;
+}
+
+.order-number-input > .number {
+    width: 100px;
+    float: left;
+}
+
+.order-des-input > textarea {
+    width: 75%;
+    float: right;
+    margin-left: 10px;
+}
+
+.code > input {
+    padding: 7px;
+    width: 65%;
+}
+
+.condition {
+    height: 34px;
+    float: right;
+    padding-left: 10px;
+    padding-top: 4px;
+    width: 75%;
+    background-color: #f2f2f2;
+    margin-left: 10px;
+}
+
+.code {
+    width: 75%;
+    float: right;
+    margin-left: 10px;
+}
+
+.code > div {
+    background-image: url(../../Images/oceanlink/code.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+    height: 34px;
+    padding: 2px 0px 5px 0px;
+    width: 22%;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #cfcfcf;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.code > a {
+    width: 7%;
+    margin-left: 10px;
+}
+
+.order-button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#order-button {
+    background-color: #83b919;
+    webkit-box-shadow: 0 7px 0 #3d5710, 0 8px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 7px 0 #3d5710, 0 8px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 500;
+    text-shadow: 2px 2px #4c6a10;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    height: 60px;
+    color: white;
+}
+
+.back-button {
+    width: 30px;
+    height: 29px;
+    background-image: url(../../Images/oceanlink/edit.png);
+    -webkit-background-size: 100% 100%; /* For WebKit*/
+    -moz-background-size: 100% 100%;    /* Mozilla*/
+    -o-background-size: 100% 100%;      /* Opera*/
+    background-size: 100% 100%;         /* Generic*/
+}
